@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
     <title>Galerii</title>
 </head>
-<body class="bg-blue-900 bg-background">
+
+<body class="bg-blue-900 bg-background leading-normal tracking-normal">
     <?php /* NAV--------------------------------- */ ?>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800 border-b-2">
       <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="p-4 flex flex-row items-center justify-between">
           <a href="#">
@@ -36,9 +46,31 @@
         </nav>
       </div>
     </div>
-galerii
+
+    <?php /* MAIN--------------------*/?>
+    <div class="flex justify-center items-center my-8">
+        <div class="max-w-4xl bg-gray-100">
+            <div class="swiper-container w-auto h-96">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="/img/gal1.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/gal2.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/gal3.png">
+                      </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>   
     <?php /* FOOTER-------------------------*/?>
-    <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-blue-700">
+    <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-gray-800">
         <div class="container mx-auto mb-8 px-6">
             <div class="sm:flex sm:mt-8">
                 <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
@@ -61,5 +93,28 @@ galerii
             </div>
         </div>
     </footer>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+      
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+      
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        })
+        </script>
 </body>
 </html>

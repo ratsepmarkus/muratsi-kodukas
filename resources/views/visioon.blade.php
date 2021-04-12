@@ -10,7 +10,7 @@
 <body class="bg-blue-900 bg-background">
     <?php /* NAV--------------------------------- */ ?>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800 border-b-2">
       <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="p-4 flex flex-row items-center justify-between">
           <a href="#">
@@ -38,7 +38,7 @@
     </div>
 visioon
     <?php /* FOOTER-------------------------*/?>
-    <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-blue-700">
+    <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-gray-800">
         <div class="container mx-auto mb-8 px-6">
             <div class="sm:flex sm:mt-8">
                 <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">

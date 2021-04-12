@@ -7,10 +7,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>Täname</title>
 </head>
-<body class="bg-blue-900 bg-background">
+<body class="bg-blue-900 bg-background bg-no-repeat">
     <?php /* NAV--------------------------------- */ ?>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800 border-b-2">
       <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="p-4 flex flex-row items-center justify-between">
           <a href="#">
@@ -36,9 +36,36 @@
         </nav>
       </div>
     </div>
-täname
+    
+    <?php /* MAIN--------------------------------------*/?>
+    <div class="container mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
+        <div class="sm:flex sm:mt-8">
+            <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">
+                <h1 class="border-0 border-black-1000 mt-8 text-3xl">Saarte Kalandus</h1>
+                <p class=" border-0 border-black-1000 text-xl mb-4">Meeldiva koostöö eest ning suhtlemisel erinevate projektide koostamisel Euroopa Merendus- ja Kalandusfondist.</p>
+                <p class="font-bold">EMKF raknduskava 2014-2020 Toetatud projektid</p>
+                <p>• 2020 - Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala- ja mereturismi arendamine</p>
+                <p>• 2019 - Muratsi sadama mänguväljaku- ja tervisekompleksi rajamine</p>
+                <p>• 2017 - Muratsi sadama rekonstrueerimine</p>
+                <h1 class="border-0 border-black-1000 mt-8 text-3xl">Saaremaa vald</h1>
+                <p class=" border-0 border-black-1000 text-xl mb-4">Suurepärase koostöö eest! Saaremaa vald on aidanud erinevate projektide omaosaluse rahastamisel ning pakub igakülgset abi sadama haldamisel.</p>
+                <h1 class="border-0 border-black-1000 mt-8 text-3xl">MTÜ Võimalus</h1>
+                <p class=" border-0 border-black-1000 text-xl mb-4">Sügisvooru 2020 projekti rahastusest on tehtud sadamale uus koduleht, rajatud elektrisüsteemid valgustuse ja turvakaamerate jaoks.</p>
+                <h1 class="border-0 border-black-1000 mt-8 text-3xl">Muratsi küla inimesed</h1>
+                <p class=" border-0 border-black-1000 text-xl mb-12">2020 aastal valminud laste mänguväljak ning tervisekompleksi omaosaluse rahastusele andis panuse Helle Liigsoo, Aivo Jürisson, Raul Pors, Eilika Trummar, Marje Kruusmägi, Aare Kruusmägi, Viljo Veesaar, Anu Ots, Mari Rauna, Helen Kombe, Kadi Hiie,Margo Jäe, Jaanus Heina, Elvis Reinmägi, Taavi Sevastjanov, Andro Ots ja Andres Kirst!</p>
+                <div class="flex flex-wrap justify-evenly pb-4">
+                    <img src="/img/kalandus.png" alt="" class="h-28 self-center">
+                    <img src="/img/vald.png" alt="" class="h-24 self-center">
+                    <img src="/img/voimalus.png" alt="" class="h-16 self-center">
+                    <img src="/img/emkf.png" alt="" class="h-24 self-center">
+                    <img src="/img/emkf2.png" alt="" class="h-24 self-center">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <?php /* FOOTER-------------------------*/?>
-    <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-blue-700">
+    <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-gray-800">
         <div class="container mx-auto mb-8 px-6">
             <div class="sm:flex sm:mt-8">
                 <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
