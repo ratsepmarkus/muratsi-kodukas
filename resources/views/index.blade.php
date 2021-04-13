@@ -14,7 +14,7 @@
       <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="p-4 flex flex-row items-center justify-between">
           <a href="#">
-              <img src="/ankur.png" alt="ankur" class="h-10">
+              <img src="/img/ankur.png" alt="ankur" class="h-10">
           </a>
           <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
             <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">

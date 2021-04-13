@@ -14,7 +14,7 @@
       <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="p-4 flex flex-row items-center justify-between">
           <a href="#">
-              <img src="/ankur.png" alt="ankur" class="h-10">
+              <img src="/img/ankur.png" alt="ankur" class="h-10">
           </a>
           <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
             <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -54,11 +54,11 @@
                 <h1 class="border-0 border-black-1000 mt-8 text-3xl">Muratsi küla inimesed</h1>
                 <p class=" border-0 border-black-1000 text-xl mb-12">2020 aastal valminud laste mänguväljak ning tervisekompleksi omaosaluse rahastusele andis panuse Helle Liigsoo, Aivo Jürisson, Raul Pors, Eilika Trummar, Marje Kruusmägi, Aare Kruusmägi, Viljo Veesaar, Anu Ots, Mari Rauna, Helen Kombe, Kadi Hiie,Margo Jäe, Jaanus Heina, Elvis Reinmägi, Taavi Sevastjanov, Andro Ots ja Andres Kirst!</p>
                 <div class="flex flex-wrap justify-evenly pb-4">
-                    <img src="/img/kalandus.png" alt="" class="h-28 self-center">
-                    <img src="/img/vald.png" alt="" class="h-24 self-center">
-                    <img src="/img/voimalus.png" alt="" class="h-16 self-center">
-                    <img src="/img/emkf.png" alt="" class="h-24 self-center">
-                    <img src="/img/emkf2.png" alt="" class="h-24 self-center">
+                    <img src="/img/taname/kalandus.png" alt="" class="h-28 self-center">
+                    <img src="/img/taname/vald.png" alt="" class="h-24 self-center">
+                    <img src="/img/taname/voimalus.png" alt="" class="h-16 self-center">
+                    <img src="/img/taname/emkf.png" alt="" class="h-24 self-center">
+                    <img src="/img/taname/emkf2.png" alt="" class="h-24 self-center">
                 </div>
             </div>
         </div>
