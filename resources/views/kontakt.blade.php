@@ -71,7 +71,7 @@
                                 www.facebook.com/muratsisadam</div>
                         </div>
                         <div class="mt-8">
-                            <h1>Muratsi Kalur MTÜ</h1>
+                            <h1 class="font-bold">Muratsi Kalur MTÜ</h1>
                             <p>Siim Hiie, <i>juhatuse liige</i></p>
                             <p>Jaan Trummar, <i>juhatuse liige</i></p>
                             <p>Ants Ilmjärv, <i>juhatuse liige</i></p>
