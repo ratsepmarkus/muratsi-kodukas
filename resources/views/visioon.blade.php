@@ -36,7 +36,8 @@
         </nav>
       </div>
     </div>
-visioon
+    
+
     <?php /* FOOTER-------------------------*/?>
     <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-gray-800">
         <div class="container mx-auto mb-8 px-6">
