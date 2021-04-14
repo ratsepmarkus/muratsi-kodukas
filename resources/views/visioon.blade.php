@@ -36,7 +36,61 @@
         </nav>
       </div>
     </div>
-    
+    <?php/*MAIN ----------------------------*/ ?>
+    <div class="container mx-auto mb-8 mt-8 px-6 bg-blue-700 rounded-2xl">
+        <div class="sm:flex sm:mt-8">
+            <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 text-white flex-none md:flex-row py-8">
+                <p>Muratsi sadam on olnud juba alates 1950 aastast paljude lemmikuks kalastuskohaks ning oma külainimestele suvitamise kohaks.  Muratsi sadamas on olnud aktiivne kalapüük ja merele minek ning kohati sadamas olnud üle 30 aluse, millest enamus ka kutselised kalurid.  Algus aegadel tegutses sadamas eraldi ka sadamavaht, kes ikka saatis mehed kalaõnnega merele ja ootas rõõmsalt tagasi koju. Samuti hoolitses turvalisuse eest Nõukogude piirivalve, et ikka meremehed tagasi jõuaksid.</p>
+                <p class="mb-4">Muratsi kandist on ikka püütud läbiaegade põhiliselt ahvenat, haugi, räime, siiga, särge jne…</p>
+                <h1 class="font-bold text-xl mt-12">2017 - 2025</h1>
+                <p class="mt-4 mb-4">Muratsi Kalur MTÜ visoon ja plaan on teha sadamaala korda, mille tulemusel tulevad kalastajatele ujuvkaid ning betooni kai kala lassimiseks. Uus mänguväljak ja tervisekompleks nii Muratsi küla inimestele kui ka külalistele väljas poolt asulat.</p>
+                <p class="mb-4">Kogukonna maja – maja, kus saaksid vajadusel kalurid oma asju hoia, külarahvas koosolekuid pidada, talisuplejad sooja sauna teha ning suviti terrassil jalga sirutada.</p>
+                <div class="flex flex-wrap justify-evenly pb-4 mb-6">
+                    <img src="/img/visioon/img1.png" alt="" class="h-28 self-center p-2">
+                    <img src="/img/visioon/img2.png" alt="" class="h-36 self-center p-2">
+                    <img src="/img/visioon/img3.png" alt="" class="h-36 self-center p-2">
+                    <img src="/img/visioon/img4.png" alt="" class="h-24 self-center p-2">
+                </div>
+                <h1 class="font-bold text-xl">2011 – 2017</h1>
+                <p class="mt-4 mb-4">Muratsi Küla Seltsil olid suured plaanid sadama alaga. Planeeritud olid koostöös arhitektidega ja projekteerijatega sadamale külaseltsimaja erinevate võimalustega, samuti suurendada suplusala, kus kõrval on nii väli korvpalliväljak kui ka võrkpalli mängimiseks liivaväljak. Külarahvas hoidis sadamat hästi!
+Leiti vahendeid ja tehti ise vajalikud tööd, et lastele oleks mängimiseks liivakast ja kiiged. Samuti korraldati iga kevadel talgud sadamaala korrastamiseks ning nii mõnigi vabaõhu üritus sai suve jooksul peetud. Sadamast oli saanud Muratsi küla inimeste lemmik vabaaja veetmis koht.</p>
+                <div class="flex flex-wrap justify-evenly pb-4 mb-6">
+                    <img src="/img/visioon/img5.png" alt="" class="h-28 self-center p-2">
+                    <img src="/img/visioon/img6.png" alt="" class="h-28 self-center p-2">
+                    <img src="/img/visioon/img7.png" alt="" class="h-28 self-center p-2">
+                    <img src="/img/visioon/img8.png" alt="" class="h-28 self-center p-2">
+                    <img src="/img/visioon/img9.png" alt="" class="h-28 self-center p-2">
+                </div>
+                <h1 class="font-bold text-xl mb-4">1991 – 2010</h1>
+                <p class="mb-4">Toonane Saare maakonna suurim omavalitsuslik vald oli Kaarma. Kaarma vald väljastas suurte plaanidega detailiplaneeringu, kus oli mõeldud suur maja nii kaluritele kui ka külainimestele. Sadamaalale oli mõeldud ligi 50 kohta väikepaatidele. Sadam kuulus rendilepingu alusel kutselistele kaluritele, kes tegid omale ühingu.</p>
+                <p class="mb-4">Kuigi plaanid teoks ei saanud, siis hoidsid sadamaalal korda kutselised kalurid, kes niitsid ja koristasid sadamat järjepidevalt. Kaarma valla poolt sai loodud ka praegu suplemiskoht, kui toodi suurtes koguses liiva nii kevadel kui ka talvel jää peale, et merepõhi oleks sõbralikum. 2000-ndatel toimusid juba suuremad koristused ja talgud külarahva poolt. Korraldati külalistele ja noortele erinevaid õpitubasid rannakalanduse teemadel ning nii mõnigi jaanipäev sai sadamas peetud.  Suuremaid kordaminekuid ning erinevaid projekte kirjutas sadamale toonane Kuressaare linnapeana ja hiljem Kaarma vallavanemana tegutsenud Ülo Vevers, kes koos elukaaslase Dailiga tänaseni sadama tegemistele kaasa aitab..</p>
+                <div class="flex flex-wrap justify-evenly pb-4 mb-6 space-x-46">
+                    <img src="/img/visioon/img10.png" alt="" class="h-36 self-center p-2">
+                    <img src="/img/visioon/img11.png" alt="" class="h-36 self-center p-2">
+                    <img src="/img/visioon/img12.png" alt="" class="h-36 self-center p-2">
+                    <img src="/img/visioon/img13.png" alt="" class="h-36 self-center p-2">
+                    <img src="/img/visioon/img14.png" alt="" class="h-36 self-center p-2">
+                </div>
+                <h1 class="font-bold text-xl mb-4">1960 – 1990</h1>
+
+                <p>Muratsi sadama kohta on vähe kirja pandud ning Saaremaa arhiivis puudub selle kohta mis siin sellel ajavahemikul toimus….sellegipoolest , siis ajaloolist hõngu pakkuvad tol ajal sadamaalal tegutsenud kalurid ja külainimesed.</p>
+                <div class="mt-4 mb-4">
+                    <p>• Praegune sadamamaja on ehitatud 1987-1988 kutseliste kalurite poolt, eesmärgiga hoida varustust ning katuse all hoida külmkambrit kalade säilitamiseks.</p>
+                    <p>• 1960 – 1988 haldas sadamat Mereranna kolhoos ning kalapaate oli 30 ringis.</p>
+                    <p>• Sadamaala oli lukus ja ööpäeva ringselt oli sadamal valve. Sadamavaht registreeris kõik minekud ja tulekud ning seda kontrollis ka piirivalve. Selleks peeti logiraamatud, kus kirja sai pandud kõik sõidud ja merelt tulnud saagid.</p>
+                </div>
+                <p>Vello Salong, Maidu Ots, Daili Tuuling, Argo Sepp.</p>
+                <div class="flex flex-wrap justify-evenly pb-4 mb-16 mt-12">
+                    <img src="/img/visioon/img15.png" alt="" class="h-36 self-center p-2">
+                    <img src="/img/visioon/img16.png" alt="" class="h-36 self-center p-2">
+                    <img src="/img/visioon/img17.png" alt="" class="h-36 self-center p-2">
+                    <img src="/img/visioon/img18.png" alt="" class="h-36 self-center p-2">
+                    <img src="/img/visioon/img19.png" alt="" class="h-36 self-center p-2">
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <?php /* FOOTER-------------------------*/?>
     <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-gray-800">
