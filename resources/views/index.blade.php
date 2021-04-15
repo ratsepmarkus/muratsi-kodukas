@@ -36,30 +36,5 @@
         </nav>
       </div>
     </div>
-avaleht
-    <?php /* FOOTER-------------------------*/?>
-    <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-gray-800">
-        <div class="container mx-auto mb-8 px-6">
-            <div class="sm:flex sm:mt-8">
-                <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
-                    <div class="flex flex-col text-white text-md">
-                        <span class="my-2">Muratsi Kalur MTÜ</span>
-                        <span class="my-2">+372 5397 4722</span>
-                        <span class="my-2">sadam@muratsi.ee</span>
-                    </div>
-                    <div class="flex flex-col text-white text-md">
-                        <span class="my-2">Äriregistri kood 80413704</span>
-                        <span class="my-2">Swedbank</span>
-                        <span class="my-2">IBAN nr EE482200221066231854</span>
-                    </div>
-                    <div class="flex flex-col text-white text-md">
-                        <span class="my-2">Muratsi küla</span>
-                        <span class="my-2">Saaremaa Vald</span>
-                        <span class="my-2">93859 Saaremaa, Eesti</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>

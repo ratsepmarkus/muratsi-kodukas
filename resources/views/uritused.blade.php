@@ -36,8 +36,19 @@
         </nav>
       </div>
     </div>
-üritused
+    <?php/*MAIN ----------------------------*/ ?>
+    <div class="container mx-auto mb-8 mt-8 px-6 bg-blue-700 rounded-2xl">
+        <div class="sm:flex sm:mt-8">
+            <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 text-white flex-none md:flex-row py-8 h-96">
+                <div class="font-bold text-small sm:text-xl text-center">Muratsi sadamas toimuvad üritused ning tegevused 2021</div>
+                <div>
+                    <div>10. juuli Muratsi minikohvikute päeva lõpetamine</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <?php /* FOOTER-------------------------*/?>
+    <div class="mt-52"></div>
     <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-gray-800">
         <div class="container mx-auto mb-8 px-6">
             <div class="sm:flex sm:mt-8">
