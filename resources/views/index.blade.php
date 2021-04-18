@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <title>Document</title>
+  <title>Avaleht</title>
 </head>
 <body class="bg-blue-900 bg-background bg-no-repeat">
+<?php /*WEATHER DATA*/?>
   <div class="container flex text-center text-xl font-bold">
     <div class="bg-black bg-opacity-40 p-4">
       <h1 class="text-white">Üldine ilm</h1>
@@ -22,7 +23,7 @@
       <p class="text-yellow-400" id="wind"></p>
     </div>
   </div>
-
+<?php /*POSTS*/?>
   <div class="container mx-auto mb-12 mt-8 px-6 flex text-white">
     <div class="mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl w-4/6 shadow-xl">
       <div class="p-4">
@@ -31,15 +32,29 @@
           <p>22.02.2021</p>
         </div>
         <div class="flex">
-          
           <p>Jaanuari algul alustati kaevetöödega Muratsi sadama akvatooriumis, kus väljakaevatava osa asemel tuleb ujuvkai, mis annab sadamale juurde 16 paadi kohta.
             Projekti "Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala-ja...</p>
           <img src="/img/postitus1.png" class="h-32 ml-4">
         </div>
-        
+        <div class="flex mb-4 justify-between">
+          <a href="#" class="font-bold text-xl"><u>Muratsi sadamas alustati ujuvkai paigaldust</u></a>
+          <p>22.02.2021</p>
+        </div>
+        <div class="flex">
+          <p>Jaanuari algul alustati kaevetöödega Muratsi sadama akvatooriumis, kus väljakaevatava osa asemel tuleb ujuvkai, mis annab sadamale juurde 16 paadi kohta.
+            Projekti "Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala-ja...</p>
+          <img src="/img/postitus1.png" class="h-32 ml-4">
+        </div>
+        <div class="flex mb-4 justify-between">
+          <a href="#" class="font-bold text-xl"><u>Muratsi sadamas alustati ujuvkai paigaldust</u></a>
+          <p>22.02.2021</p>
+        </div>
+        <div class="flex">
+          <p>Jaanuari algul alustati kaevetöödega Muratsi sadama akvatooriumis, kus väljakaevatava osa asemel tuleb ujuvkai, mis annab sadamale juurde 16 paadi kohta.
+            Projekti "Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala-ja...</p>
+          <img src="/img/postitus1.png" class="h-32 ml-4">
+        </div>
       </div>
-      <p>post2</p>
-      <p>post3</p>
     </div>
     <div class="flex flex-col w-2/6">
       <div class="mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl w-96 h-40 text-center align-middle flex flex-col justify-center shadow-xl">
@@ -52,7 +67,7 @@
     </div>
     
   </div>
-  <?php /* FOOTER-------------------------*/?>
+<?php /*FOOTER*/?>
     <footer class="footer relative pt-1 border-b-2 border-gray-800 bg-gray-800">
         <div class="container mx-auto mb-8 px-6">
             <div class="sm:flex-col sm:mt-8">
