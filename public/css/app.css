@@ -4426,6 +4426,22 @@ select {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
+.bg-background {
+  background-image: url('/img/poly-bg.png');
+}
+
+.bg-header-bg {
+  background-image: url('/img/midagi.png');
+}
+
+.bg-header-bg2 {
+  background-image: url('/img/full-header-bg.png');
+}
+
+.bg-header-bg3 {
+  background-image: url('/img/header-bg3.png');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -35767,6 +35783,22 @@ select {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .sm\:bg-background {
+    background-image: url('/img/poly-bg.png');
+  }
+
+  .sm\:bg-header-bg {
+    background-image: url('/img/midagi.png');
+  }
+
+  .sm\:bg-header-bg2 {
+    background-image: url('/img/full-header-bg.png');
+  }
+
+  .sm\:bg-header-bg3 {
+    background-image: url('/img/header-bg3.png');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -66936,6 +66968,22 @@ select {
 
   .md\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .md\:bg-background {
+    background-image: url('/img/poly-bg.png');
+  }
+
+  .md\:bg-header-bg {
+    background-image: url('/img/midagi.png');
+  }
+
+  .md\:bg-header-bg2 {
+    background-image: url('/img/full-header-bg.png');
+  }
+
+  .md\:bg-header-bg3 {
+    background-image: url('/img/header-bg3.png');
   }
 
   .md\:from-transparent {
@@ -98109,6 +98157,22 @@ select {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-background {
+    background-image: url('/img/poly-bg.png');
+  }
+
+  .lg\:bg-header-bg {
+    background-image: url('/img/midagi.png');
+  }
+
+  .lg\:bg-header-bg2 {
+    background-image: url('/img/full-header-bg.png');
+  }
+
+  .lg\:bg-header-bg3 {
+    background-image: url('/img/header-bg3.png');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -129280,6 +129344,22 @@ select {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-background {
+    background-image: url('/img/poly-bg.png');
+  }
+
+  .xl\:bg-header-bg {
+    background-image: url('/img/midagi.png');
+  }
+
+  .xl\:bg-header-bg2 {
+    background-image: url('/img/full-header-bg.png');
+  }
+
+  .xl\:bg-header-bg3 {
+    background-image: url('/img/header-bg3.png');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -160449,6 +160529,22 @@ select {
 
   .\32xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-background {
+    background-image: url('/img/poly-bg.png');
+  }
+
+  .\32xl\:bg-header-bg {
+    background-image: url('/img/midagi.png');
+  }
+
+  .\32xl\:bg-header-bg2 {
+    background-image: url('/img/full-header-bg.png');
+  }
+
+  .\32xl\:bg-header-bg3 {
+    background-image: url('/img/header-bg3.png');
   }
 
   .\32xl\:from-transparent {
