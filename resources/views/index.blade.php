@@ -8,6 +8,21 @@
   <title>Document</title>
 </head>
 <body class="bg-blue-900 bg-background bg-no-repeat">
+  <div class="container flex text-center text-xl font-bold">
+    <div class="bg-black bg-opacity-40 p-4">
+      <h1 class="text-white">Üldine ilm</h1>
+      <p  class="text-yellow-400" id="desc"></p>
+    </div>
+    <div class="bg-black bg-opacity-40 p-4 mx-8">
+      <h1 class="text-white">Temperatuur</h1>
+      <p class="text-yellow-400" id="temp"></p>
+    </div>
+    <div class="bg-black bg-opacity-40 p-4">
+      <h1 class="text-white">Tuul</h1>
+      <p class="text-yellow-400" id="wind"></p>
+    </div>
+  </div>
+
   <div class="container mx-auto mb-12 mt-8 px-6 flex text-white">
     <div class="mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl w-4/6 shadow-xl">
       <div class="p-4">
@@ -75,5 +90,6 @@
             </div>
         </div>
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
