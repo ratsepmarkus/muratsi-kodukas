@@ -9,4 +9,3 @@ fetch('http://api.openweathermap.org/data/2.5/weather?id=590939&units=metric&app
   temp.innerHTML = tempValue+" °C";
   desc.innerHTML = descValue;
 })
-.catch(err => alert("Wrong city name!"));

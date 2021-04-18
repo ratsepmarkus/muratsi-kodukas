@@ -51,7 +51,7 @@
                             <input type="text" name="_subject"  placeholder="Tähtis asi!" required class="my-4 border-black border-b-4">
                             <textarea name="message" cols="30" rows="10" placeholder="Sõnum" required class="border-black border-b-4"></textarea>
                             <button type="submit" class="bg-white text-black border-black border-1 rounded-xl w-min py-1 px-2 mt-4">Saada</button>
-                       </form>
+                        </form>
                     </div>
                     <div class="my-8 sm:my-0">
                         <img src="/img/logo.png" alt="Muratsi sadama logo" class="">
