@@ -8,18 +8,30 @@
   <title>Document</title>
 </head>
 <body class="bg-blue-900 bg-background bg-no-repeat">
-  <div class="container mx-auto mb-12 mt-8 px-6 flex">
-    <div class="mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
-      <p>post1</p>
+  <div class="container mx-auto mb-12 mt-8 px-6 flex text-white">
+    <div class="mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl w-4/6 shadow-xl">
+      <div class="p-4">
+        <div class="flex mb-4 justify-between">
+          <a href="#" class="font-bold text-xl"><u>Muratsi sadamas alustati ujuvkai paigaldust</u></a>
+          <p>22.02.2021</p>
+        </div>
+        <div class="flex">
+          
+          <p>Jaanuari algul alustati kaevetöödega Muratsi sadama akvatooriumis, kus väljakaevatava osa asemel tuleb ujuvkai, mis annab sadamale juurde 16 paadi kohta.
+            Projekti "Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala-ja...</p>
+          <img src="/img/postitus1.png" class="h-32 ml-4">
+        </div>
+        
+      </div>
       <p>post2</p>
       <p>post3</p>
     </div>
-    <div class="flex flex-col">
-      <div class="mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
-        <a href=""><u>SADAMA OTSEPILT</u></a>
+    <div class="flex flex-col w-2/6">
+      <div class="mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl w-96 h-40 text-center align-middle flex flex-col justify-center shadow-xl">
+        <a href="" class="font-bold text-xl py-4 hover:text-gray-200"><u>SADAMA OTSEPILT</u></a>
         <p>Klõpsa lingile, et näha sadama kaamerast otsepilti</p>
       </div>
-      <div class="mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
+      <div class="mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl w-96 h-40 text-center align-middle flex flex-col justify-center shadow-xl">
         <p>Reklaam</p>
       </div>
     </div>
@@ -42,7 +54,7 @@
                   </div>
                 </div>
               </div>
-              <hr class=" my-16">
+              <hr class="my-16">
                 <div class="sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
                     <div class="flex flex-col text-white text-md">
                         <span class="my-2">Muratsi Kalur MTÜ</span>
