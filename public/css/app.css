@@ -4430,16 +4430,8 @@ select {
   background-image: url('/img/poly-bg.png');
 }
 
-.bg-header-bg {
-  background-image: url('/img/midagi.png');
-}
-
-.bg-header-bg2 {
-  background-image: url('/img/full-header-bg.png');
-}
-
-.bg-header-bg3 {
-  background-image: url('/img/header-bg3.png');
+.bg-nav-bg {
+  background-image: url('/img/nav-bg.png');
 }
 
 .from-transparent {
@@ -35787,16 +35779,8 @@ select {
     background-image: url('/img/poly-bg.png');
   }
 
-  .sm\:bg-header-bg {
-    background-image: url('/img/midagi.png');
-  }
-
-  .sm\:bg-header-bg2 {
-    background-image: url('/img/full-header-bg.png');
-  }
-
-  .sm\:bg-header-bg3 {
-    background-image: url('/img/header-bg3.png');
+  .sm\:bg-nav-bg {
+    background-image: url('/img/nav-bg.png');
   }
 
   .sm\:from-transparent {
@@ -66974,16 +66958,8 @@ select {
     background-image: url('/img/poly-bg.png');
   }
 
-  .md\:bg-header-bg {
-    background-image: url('/img/midagi.png');
-  }
-
-  .md\:bg-header-bg2 {
-    background-image: url('/img/full-header-bg.png');
-  }
-
-  .md\:bg-header-bg3 {
-    background-image: url('/img/header-bg3.png');
+  .md\:bg-nav-bg {
+    background-image: url('/img/nav-bg.png');
   }
 
   .md\:from-transparent {
@@ -98161,16 +98137,8 @@ select {
     background-image: url('/img/poly-bg.png');
   }
 
-  .lg\:bg-header-bg {
-    background-image: url('/img/midagi.png');
-  }
-
-  .lg\:bg-header-bg2 {
-    background-image: url('/img/full-header-bg.png');
-  }
-
-  .lg\:bg-header-bg3 {
-    background-image: url('/img/header-bg3.png');
+  .lg\:bg-nav-bg {
+    background-image: url('/img/nav-bg.png');
   }
 
   .lg\:from-transparent {
@@ -129348,16 +129316,8 @@ select {
     background-image: url('/img/poly-bg.png');
   }
 
-  .xl\:bg-header-bg {
-    background-image: url('/img/midagi.png');
-  }
-
-  .xl\:bg-header-bg2 {
-    background-image: url('/img/full-header-bg.png');
-  }
-
-  .xl\:bg-header-bg3 {
-    background-image: url('/img/header-bg3.png');
+  .xl\:bg-nav-bg {
+    background-image: url('/img/nav-bg.png');
   }
 
   .xl\:from-transparent {
@@ -160535,16 +160495,8 @@ select {
     background-image: url('/img/poly-bg.png');
   }
 
-  .\32xl\:bg-header-bg {
-    background-image: url('/img/midagi.png');
-  }
-
-  .\32xl\:bg-header-bg2 {
-    background-image: url('/img/full-header-bg.png');
-  }
-
-  .\32xl\:bg-header-bg3 {
-    background-image: url('/img/header-bg3.png');
+  .\32xl\:bg-nav-bg {
+    background-image: url('/img/nav-bg.png');
   }
 
   .\32xl\:from-transparent {
