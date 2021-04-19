@@ -40,7 +40,7 @@
   nav ul li:nth-child(1) { --t: 0.3; --l: 0.5; }
   nav ul li:nth-child(2) { --t: 0.6; --l: 1.7; }
   nav ul li:nth-child(3) { --t: 0.9; --l: 3; }
-  nav ul li:nth-child(4) { --t: 1.2; --l: 4.4;} 
+  nav ul li:nth-child(4) { --t: 1.2; --l: 4.4;}
   nav ul li:nth-child(5) { --t: 1.4; --l: 6.1;}
   nav ul li:nth-child(6) { --t: 1.6; --l: 7.6;}
   nav ul li:nth-child(7) { --t: 1.7; --l: 9; }
@@ -62,6 +62,13 @@
     </ul>
     <svg class="svg-wave" width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1920 300H0V0C435.72 154.841 831.391 213.662 1920 247.761V300Z" fill="#1D4ED8"/></svg>
   </nav>
+
+  <?php /*TEST*/?>
+  <div class=" border-t-2 border-gray-800  fixed">
+  <img src="/img/vapid nshit.png" alt="" class="fixed">
+  </div>
+  <?php /*TEST*/?>
+
 <?php /*WEATHER DATA
   <div class="container flex text-center text-lg font-bold">
     <div class="bg-black bg-opacity-40 p-4">
@@ -169,5 +176,6 @@
       </div>
   </footer>
   <script src="/script.js"></script>
+  <script src="/post.js"></script>
 </body>
 </html>
