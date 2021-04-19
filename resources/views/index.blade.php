@@ -54,7 +54,8 @@
 </head>
 
 <body class="bg-blue-900 bg-background overflow-x-hidden">
-  <header class="bg-nav-bg bg-no-repeat bg-cover pt-64 bg-center">
+  <header class="bg-nav-bg bg-no-repeat bg-cover bg-center">
+    <img src="/img/logo.png" alt="logo" class="mb-60">
     <nav>
       <svg class="svg-wave" width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1920 300H0V0C435.72 154.841 831.391 213.662 1920 247.761V300Z" fill="#1D4ED8"/></svg>
       <ul>
