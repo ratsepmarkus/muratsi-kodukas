@@ -7,7 +7,7 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <title>Avaleht</title>
 </head>
-<body class="bg-blue-900 bg-background bg-no-repeat">
+<body class="bg-blue-900 bg-background">
 <?php /*WEATHER DATA*/?>
   <div class="container flex text-center text-lg font-bold">
     <div class="bg-black bg-opacity-40 p-4">
@@ -26,19 +26,19 @@
 <?php /*POSTS*/?>
   <div class="container mx-auto mb-12 mt-8 sm:px-6 flex text-white flex-col sm:flex-row">
     <div class="mx-auto mb-12 my-8 px-4 bg-blue-700 rounded-2xl shadow-xl">
-      <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">
+      <div class="mt-8 sm:mt-0 sm:w-full pb-8 sm:p-8 text-white md:flex-row">
         <div>
           <div class="flex mb-4 justify-between">
             <a href="#" class="font-bold text-lg sm:text-xl"><u>Muratsi sadamas alustati ujuvkai paigaldust</u></a>
             <p class="text-yellow-400">22.02.2021</p>
           </div>
-          <div class="flex flex-col sm:flex-row items-end">
+          <div class="flex flex-col sm:flex-row items-start">
             <p>Jaanuari algul alustati kaevetöödega Muratsi sadama akvatooriumis, kus väljakaevatava osa asemel tuleb ujuvkai, mis annab sadamale juurde 16 paadi kohta.
               Projekti ''Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala-ja mereturisimi arendamine'' jaoks saadi rahastus läbi Saarte Kalanduse EMKF kalanduspiirkonna kohaliku arengu strateegia 3.3 kaudu.
               Projekti kogu maksumus on 57 492€, millest PRIA toetus on 51 743€. Omaosaluse osalise katmise panustas Saaremaa vald.
               Peatöövõtja on Kuressaare Ehitus OÜ ning alltöövõtja Sikasaare Vanametall OÜ.
               Tööd planeeritakse lõpetada aprillis.</p>
-            <img src="/img/postitus1.png" class="h-32 ml-4">
+            <img src="/img/postitus1.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
           </div>
         </div>
 
@@ -47,10 +47,10 @@
             <a href="#" class="font-bold text-lg sm:text-xl"><u>Kena Tegu 2020 nominent</u></a>
             <p class="text-yellow-400">22.02.2021</p>
           </div>
-          <div class="flex">
+          <div class="flex flex-col sm:flex-row items-start">
             <p>Saaremaa Arenduskeskuse poolt korraldatud tunnustusüritusel saime märgitud kui Kena Tegu 2020 nominent. Tunnustus saadi uute tegevustega sadamaalal, kui kogukonna kaasabil korrastati haljastus ning suplusala. PRIA toetusega rajati uus mänguväljak lastele ja noortele ning täiskasvanutele väli tervisespordikompleks.
             </p>
-            <img src="/img/postitus2.png" class="h-32 ml-4">
+            <img src="/img/postitus2.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
           </div>
         </div>
 
@@ -58,20 +58,20 @@
           <a href="#" class="font-bold text-lg sm:text-xl"><u>Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi.</u></a>
           <p class="text-yellow-400">22.02.2021</p>
         </div>
-        <div class="flex">
-          <p>MTÜ-de Muratsi Kalur ja Muratsi Küla Selts korraldatud talgutele kogunes laupäeva hommikul veerandsada külaelanikku.  Suur osa tööst sai tehtud masinate abil: killustik ja muld laiali laotatud ning maapind enam-vähem tasaseks silutud. Oma käterammule lootnud talguliste hooleks jäi maapind riisuda, kivid ära korjata, muru külvata ja muld siledaks rullida, samuti võrkpalliplatsi jaoks toodud liiv laiali ajada ja siluda. Mehed tegid segu ja paigaldasid muruplatsile äärekivid. Kolme tunniga said haljastustööd tehtud ja rannaala korda. Endiste lagunenud ja ohtlikuks muutunud atraktsioonide asemel ootavad oma küla elanikke ja külalisi nüüd mängulinnak, liivakast, kiiged, pisike karussell, sportimiskompleks, kolm erineva kõrgusega korvilauda, uued pingid, riietumiskabiin ja jalgrattahoidja. “Tänu Saaremaa vallale saime randa ka uue liiva,” lausus Hiie. Tema sõnul on kumu uuest mänguväljakust juba levida jõudnud – lapsi turnib atraktsioonidel iga päev. MTÜ Saarte Kalandus toetas Euroopa Merendus- ja Kalandusfondi sügisesest taotlusvoorust Muratsi Kaluri projekti sadama mänguväljaku- ja tervisekompleksi rajamiseks 48 627  euroga. Vajaliku omaosaluse aitasid katta Saaremaa vald ja Muratsi elanikud. “Kuna meie kogukonda kuulub palju häid inimesi, kes said appi tulla oma rasketehnikaga või organiseerida sadamaalale oma vahenditest liiva, mulda ja killustikku, sai see töö plaanitust suuremalt ette võetud, et sadamaala terviklikumalt ilusamaks teha. Samuti planeerisime parkimisala ja sõiduala suuremaks, et nii kutselised kui ka hobikalurid saaksid sadamaalal paremini tegutseda,” rääkis Siim Hiie. Uudis: https://saartehaal.postimees.ee/6997472/muratsi-sadam-roomustab-manguvaljakuga </p>
-          <img src="/img/postitus3.png" class="h-32 ml-4">
+        <div class="flex flex-col sm:flex-row items-start">
+          <p>MTÜ-de Muratsi Kalur ja Muratsi Küla Selts korraldatud talgutele kogunes laupäeva hommikul veerandsada külaelanikku.  Suur osa tööst sai tehtud masinate abil: killustik ja muld laiali laotatud ning maapind enam-vähem tasaseks silutud. Oma käterammule lootnud talguliste hooleks jäi maapind riisuda, kivid ära korjata, muru külvata ja muld siledaks rullida, samuti võrkpalliplatsi jaoks toodud liiv laiali ajada ja siluda. Mehed tegid segu ja paigaldasid muruplatsile äärekivid. Kolme tunniga said haljastustööd tehtud ja rannaala korda. Endiste lagunenud ja ohtlikuks muutunud atraktsioonide asemel ootavad oma küla elanikke ja külalisi nüüd mängulinnak, liivakast, kiiged, pisike karussell, sportimiskompleks, kolm erineva kõrgusega korvilauda, uued pingid, riietumiskabiin ja jalgrattahoidja. “Tänu Saaremaa vallale saime randa ka uue liiva,” lausus Hiie. Tema sõnul on kumu uuest mänguväljakust juba levida jõudnud – lapsi turnib atraktsioonidel iga päev. MTÜ Saarte Kalandus toetas Euroopa Merendus- ja Kalandusfondi sügisesest taotlusvoorust Muratsi Kaluri projekti sadama mänguväljaku- ja tervisekompleksi rajamiseks 48 627  euroga. Vajaliku omaosaluse aitasid katta Saaremaa vald ja Muratsi elanikud. “Kuna meie kogukonda kuulub palju häid inimesi, kes said appi tulla oma rasketehnikaga või organiseerida sadamaalale oma vahenditest liiva, mulda ja killustikku, sai see töö plaanitust suuremalt ette võetud, et sadamaala terviklikumalt ilusamaks teha. Samuti planeerisime parkimisala ja sõiduala suuremaks, et nii kutselised kui ka hobikalurid saaksid sadamaalal paremini tegutseda,” rääkis Siim Hiie.</p>
+          <img src="/img/postitus3.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
         </div>
       </div>
     </div>
 
-    <div class="flex flex-col">
-      <div class="mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl h-40 text-center align-middle flex flex-col justify-center shadow-xl">
+    <div class="flex flex-col px-8">
+      <div class="mb-12 mt-8 px-6 bg-blue-700 rounded-2xl h-40 text-center align-middle flex flex-col justify-center shadow-xl">
         <a href="" class="font-bold text-xl py-4 hover:text-gray-200"><u>SADAMA OTSEPILT</u></a>
         <p>Klõpsa lingile, et näha sadama kaamerast otsepilti</p>
       </div>
 
-      <div class="mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl h-40 text-center align-middle flex flex-col justify-center shadow-xl">
+      <div class="mb-12 mt-8 px-6 bg-blue-700 rounded-2xl h-40 text-center align-middle flex flex-col justify-center shadow-xl">
         <p>Reklaam</p>
       </div>
     </div>
