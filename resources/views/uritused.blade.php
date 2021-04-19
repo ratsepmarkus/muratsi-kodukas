@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>Üritused</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        * {font-family: 'Montserrat', sans-serif;}
+    </style>
 </head>
 <body class="bg-blue-900 bg-background">
     <?php /* NAV--------------------------------- */ ?>

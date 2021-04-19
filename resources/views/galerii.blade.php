@@ -4,17 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <style>
-* {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
-/* Slideshow container */
-.slideshow-container {max-width: 1000px;position: relative;}
-/* Next & previous buttons */
-.prev, .next {cursor: pointer;position: absolute;top: 50%;width: auto;padding: 16px;margin-top: -22px;color: white;font-weight: bold;font-size: 18px;transition: 0.6s ease;border-radius: 0 3px 3px 0;user-select: none;}
-/* Position the "next button" to the right */
-.next {right: 0;border-radius: 3px 0 0 3px;}
-/* On hover, add a grey background color */
-.prev:hover, .next:hover {background-color: #f1f1f1;color: black;}
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  * {font-family: 'Montserrat', sans-serif;}
+  * {box-sizing: border-box}
+  .mySlides1, .mySlides2 {display: none}
+  img {vertical-align: middle;}
+  /* Slideshow container */
+  .slideshow-container {max-width: 1000px;position: relative;}
+  /* Next & previous buttons */
+  .prev, .next {cursor: pointer;position: absolute;top: 50%;width: auto;padding: 16px;margin-top: -22px;color: white;font-weight: bold;font-size: 18px;transition: 0.6s ease;border-radius: 0 3px 3px 0;user-select: none;}
+  /* Position the "next button" to the right */
+  .next {right: 0;border-radius: 3px 0 0 3px;}
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {background-color: #f1f1f1;color: black;}
 </style>
 </head>
 <body class="bg-blue-900 bg-background bg-no-repeat">

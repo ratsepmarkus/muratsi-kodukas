@@ -7,13 +7,16 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <title>Avaleht</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
     nav {
     --svgw: 1920;
     --svgh: 300;
     position: relative;
     width: 100vw;
     height: calc((100vw * var(--svgh)) / var(--svgw));
-    background-image: url(/);
   }
   .svg-wave {
     position: absolute;
@@ -21,6 +24,8 @@
     left: 0;
     width: 100vw;
     height: calc(100vw * var(--svgh) / var(--svgw));
+  }
+  header {
     z-index: -1;
   }
   nav ul {
@@ -49,20 +54,23 @@
 </head>
 
 <body class="bg-blue-900 bg-background overflow-x-hidden">
-  <nav>
-    <ul>
-      <li><a href="">AVALEHT</a></li>
-      <li><a href="">KONTAKT</a></li>
-      <li><a href="">TASUD</a></li>
-      <li><a href="">EESKIRJAD</a></li>
-      <li><a href="">ÜRITUSED</a></li>
-      <li><a href="">VISIOON</a></li>
-      <li><a href="">GALERII</a></li>
-      <li><a href="">TÄNAME</a></li>
-    </ul>
-    <svg class="svg-wave" width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1920 300H0V0C435.72 154.841 831.391 213.662 1920 247.761V300Z" fill="#1D4ED8"/></svg>
-  </nav>
-<?php /*WEATHER DATA
+  <header class="bg-nav-bg bg-no-repeat bg-cover pt-64 bg-center">
+    <nav>
+      <svg class="svg-wave" width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1920 300H0V0C435.72 154.841 831.391 213.662 1920 247.761V300Z" fill="#1D4ED8"/></svg>
+      <ul>
+        <li><a href="/">AVALEHT</a></li>
+        <li><a href="/kontakt">KONTAKT</a></li>
+        <li><a href="/tasud">TASUD</a></li>
+        <li><a href="/eeskirjad">EESKIRJAD</a></li>
+        <li><a href="/uritused">ÜRITUSED</a></li>
+        <li><a href="/visioon">VISIOON</a></li>
+        <li><a href="/galerii">GALERII</a></li>
+        <li><a href="/taname">TÄNAME</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+<?php /*WEATHER DATA*/?>
   <div class="container flex text-center text-lg font-bold">
     <div class="bg-black bg-opacity-40 p-4">
       <h1 class="text-white">Üldine ilm</h1>
@@ -76,14 +84,14 @@
       <h1 class="text-white">Tuul</h1>
       <p class="text-yellow-400" id="wind"></p>
     </div>
-  </div>*/?>
+  </div>
 <?php /*POSTS*/?>
   <div class="container mx-auto mb-12 sm:px-6 flex text-white flex-col lg:flex-row mt-12">
     <div class="mx-auto mb-12 px-4 bg-blue-700 rounded-2xl shadow-xl">
       <div class="mt-8 sm:mt-0 sm:w-full pb-8 sm:p-8 text-white md:flex-row">
         <div>
           <div class="flex mb-4 justify-between">
-            <a href="#" class="font-bold text-lg sm:text-xl"><u>Muratsi sadamas alustati ujuvkai paigaldust</u></a>
+            <a href="#" class="font-bold text-lg sm:text-xl">Muratsi sadamas alustati ujuvkai paigaldust</a>
             <p class="text-yellow-400">22.02.2021</p>
           </div>
           <div class="flex flex-col sm:flex-row items-start">
@@ -98,18 +106,18 @@
 
         <div class="border-t-2 border-b-2 border-gray-800 py-8 my-8">
           <div class="flex mb-4 justify-between">
-            <a href="#" class="font-bold text-lg sm:text-xl"><u>Kena Tegu 2020 nominent</u></a>
+            <a href="#" class="font-bold text-lg sm:text-xl">Kena Tegu 2020 nominent</a>
             <p class="text-yellow-400">22.02.2021</p>
           </div>
           <div class="flex flex-col sm:flex-row items-start">
-            <p class="text-sm sm:text-base">Saaremaa Arenduskeskuse poolt korraldatud tunnustusüritusel saime märgitud kui Kena Tegu 2020 nominent. Tunnustus saadi uute tegevustega sadamaalal, kui kogukonna kaasabil korrastati haljastus ning suplusala. PRIA toetusega rajati uus mänguväljak lastele ja noortele ning täiskasvanutele väli tervisespordikompleks.
+            <p class="text-sm sm:text-base">Saaremaa Arenduskeskuse poolt korraldatud tunnustusüritusel saime märgitud kui Kena Tegu 2020 nominent. Tunnustus saadi uute tegevustega sadamaalal, kui kogukonna kaasabil korrastati haljastus ning suplusala. PRIA toetusega rajati uus mänguväljak lastele ja noortele ning täiskasvanutele väli tervisespordikompleks
             </p>
             <img src="/img/postitus2.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
           </div>
         </div>
 
         <div class="flex mb-4 justify-between">
-          <a href="#" class="font-bold text-lg sm:text-xl"><u>Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi.</u></a>
+          <a href="#" class="font-bold text-lg sm:text-xl">Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi</a>
           <p class="text-yellow-400">22.02.2021</p>
         </div>
         <div class="flex flex-col sm:flex-row items-start">
