@@ -63,7 +63,8 @@
     <svg class="svg-wave" width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1920 300H0V0C435.72 154.841 831.391 213.662 1920 247.761V300Z" fill="#1D4ED8"/></svg>
   </nav>
 
-  <?php /*TEST*/?>
+  <?php /*TEST**/?>
+
   <div class=" border-t-2 border-gray-800  fixed">
   <img src="/img/vapid nshit.png" alt="" class="fixed">
   </div>
