@@ -44,6 +44,7 @@
     <div class="container mx-auto mb-8 mt-8 px-6 bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 text-white flex-none md:flex-row py-8">
+                <h1 class="sm:text-3xl font-bold text-yellow-400 text-2xl mb-8">MEIE VISIOON</h1>
                 <p>Muratsi sadam on olnud juba alates 1950 aastast paljude lemmikuks kalastuskohaks ning oma külainimestele suvitamise kohaks.  Muratsi sadamas on olnud aktiivne kalapüük ja merele minek ning kohati sadamas olnud üle 30 aluse, millest enamus ka kutselised kalurid.  Algus aegadel tegutses sadamas eraldi ka sadamavaht, kes ikka saatis mehed kalaõnnega merele ja ootas rõõmsalt tagasi koju. Samuti hoolitses turvalisuse eest Nõukogude piirivalve, et ikka meremehed tagasi jõuaksid.</p>
                 <p class="mb-4">Muratsi kandist on ikka püütud läbiaegade põhiliselt ahvenat, haugi, räime, siiga, särge jne…</p>
                 <h1 class="font-bold text-xl mt-12">2017 - 2025</h1>

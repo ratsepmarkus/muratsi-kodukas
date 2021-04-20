@@ -44,7 +44,7 @@
     <div class="container mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">
-                <h1 class="text-lg sm:text-3xl font-bold mb-8 text-center">Muratsi sadamaala hinnakiri 2021</h1>
+                <h1 class="sm:text-3xl text-center font-bold text-yellow-400 text-2xl mb-8">Muratsi sadamaala hinnakiri 2021</h1>
                 <div class="grid grid-rows-3 grid-cols-4 grid-flow-col gap-4 text-xs md:text-base text-center">
                     <div class="font-bold text-left">Sadama tasud külalistele</div>
                     <div class="text-left">Kaikoha kasutus alusele kuni 6 meetrit</div>

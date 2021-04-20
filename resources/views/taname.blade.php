@@ -45,6 +45,7 @@
     <div class="container mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">
+                <h1 class="sm:text-3xl font-bold text-yellow-400 text-2xl mb-8">ME TÄNAME</h1>
                 <h1 class="border-0 border-black-1000 mt-8 text-xl font-bold">Saarte Kalandus</h1>
                 <p class=" border-0 border-black-1000 mb-4">Meeldiva koostöö eest ning suhtlemisel erinevate projektide koostamisel Euroopa Merendus- ja Kalandusfondist.</p>
                 <p>EMKF raknduskava 2014-2020 Toetatud projektid</p>

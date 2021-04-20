@@ -53,6 +53,7 @@
   <div class="container mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
     <div class="sm:flex sm:mt-8">
       <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">
+        <h1 class="sm:text-3xl font-bold text-yellow-400 text-2xl mb-8">GALERII</h1>
         <h1 class="text-white text-xl font-bold">Muratsi sadama talgud 2020</h1>
         <p class="text-white ">Pildid: Saarte hääl</p>
         <div class="bg-blue-700 flex flex-col mb-14">

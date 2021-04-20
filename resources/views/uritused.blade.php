@@ -44,7 +44,7 @@
     <div class="container mx-auto mb-8 mt-8 px-6 bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 text-white flex-none md:flex-row py-8 h-96">
-                <div class="font-bold text-small sm:text-xl text-center">Muratsi sadamas toimuvad üritused ning tegevused 2021</div>
+                <div class="sm:text-3xl text-center font-bold text-yellow-400 text-2xl mb-8">Muratsi sadamas toimuvad üritused ning tegevused 2021</div>
                 <div>
                     <div>10. juuli Muratsi minikohvikute päeva lõpetamine</div>
                 </div>

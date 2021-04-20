@@ -45,7 +45,7 @@
     <div class="container mx-auto mb-8 mt-8 px-6 bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 text-white flex-none md:flex-row">
-                <h1 class="text-center border-0 border-black-1000 mt-8 text-3xl mb-5 font-bold">Tere tulemast Muratsi sadamasse!</h1>
+                <h1 class="sm:text-3xl text-center font-bold text-yellow-400 text-2xl mb-8 mt-8">Tere tulemast Muratsi sadamasse!</h1>
                 <p class="text-center border-0 mt-14 border-black-1000 text-xl font-bold">Sadama eeskirjad</p>
                 <p>Hoia puhtust ning ära jäta enda järel prügi maha!</p>
                 <p>Ära tarbi alkoholi sadama ega rannaalal!</p>
