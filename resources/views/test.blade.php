@@ -82,6 +82,21 @@
     </div>
   <header class="bg-nav-bg bg-no-repeat bg-cover bg-center">
     <img src="/img/logo.png" alt="logo" class="mb-64 h-36 sm:h-44 md:h-52 lg:h-60">
+    <?php /*WEATHER DATA*/?>
+    <div class="flex text-center text-xs md:text-lg font-bold justify-end pr-4 md:pr-12">
+        <div class="bg-black bg-opacity-40 p-2">
+          <h1 class="text-white">Üldine ilm</h1>
+          <p  class="text-yellow-400" id="desc"></p>
+        </div>
+        <div class="bg-black bg-opacity-40 p-2 mx-4">
+          <h1 class="text-white">Temperatuur</h1>
+          <p class="text-yellow-400" id="temp"></p>
+        </div>
+        <div class="bg-black bg-opacity-40 p-2">
+          <h1 class="text-white">Tuul</h1>
+          <p class="text-yellow-400" id="wind"></p>
+        </div>
+    </div>
     <nav class="navigation flex items-center invisible lg:visible">
       <?php /*nav*/?>
       <svg class="svg-wave" width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1920 300H0V0C435.72 154.841 831.391 213.662 1920 247.761V300Z" fill="#1D4ED8"/></svg>
@@ -97,6 +112,7 @@
       </ul>
     </nav>
   </header>
+    
   <script src="/script.js"></script>
 </body>
 </html>
