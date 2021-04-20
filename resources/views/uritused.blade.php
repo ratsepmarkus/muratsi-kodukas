@@ -52,7 +52,7 @@
         </div>
     </div>
     <?php /* FOOTER-------------------------*/?>
-    <div class="mt-52"></div>
+    <div class="mt-72"></div>
     <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-gray-800">
         <div class="container mx-auto mb-8 px-6">
             <div class="sm:flex sm:mt-8">

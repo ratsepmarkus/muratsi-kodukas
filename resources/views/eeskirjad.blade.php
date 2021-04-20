@@ -45,8 +45,8 @@
     <div class="container mx-auto mb-8 mt-8 px-6 bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 text-white flex-none md:flex-row">
-                <h1 class="text-center border-0 border-black-1000 mt-8 text-4xl mb-5">Tere tulemast Muratsi sadamasse!</h1>
-                <p class="text-center border-0 mt-14 border-black-1000 text-2xl">Sadama eeskirjad</p>
+                <h1 class="text-center border-0 border-black-1000 mt-8 text-3xl mb-5 font-bold">Tere tulemast Muratsi sadamasse!</h1>
+                <p class="text-center border-0 mt-14 border-black-1000 text-xl font-bold">Sadama eeskirjad</p>
                 <p>Hoia puhtust ning ära jäta enda järel prügi maha!</p>
                 <p>Ära tarbi alkoholi sadama ega rannaalal!</p>
                 <p>Mänguväljaku kasutamine omal vastutusel ning täiskasvanu järelvalve all!</p>
@@ -54,24 +54,24 @@
                 <p>Koer peab sadamaalal olema jalutusrihma või kandmisvahendis, et tagada inimeste ja teiste loomade ohutus.</p>
                 <p>Öörahu sadamaalal kell 22.00! v.a. üritustel, mis kooskülas sadama haldajaga</p>
                 <p>Sadamaalal on 24h videovalve.</p>
-                <p class="text-center border-0 mt-8 mb-4 border-black-1000 text-2xl">Turvalisuse, heakorra ja avaliku korra nõuded supluskohas</p>
+                <p class="text-center border-0 mt-12 mb-4 border-black-1000 text-xl font-bold">Turvalisuse, heakorra ja avaliku korra nõuded supluskohas</p>
                 <p>Randa ei ole lubatud kaasa võtta ega seal ujutada lemmik-ja muid loomi</p>
                 <p>Ära jäta lapsi omapead! Ka madalas vees järelvalveta viibimine võib olla ohtlik</p>
                 <p>Rannas ega vees ei viibita ega ujuta joobeseisundis, narko-või muude psühhotoksiliste ainete mõju all</p>
                 <p>Ära võta randa kaasa klaastaara jooke</p>
                 <p>Rannaala on avalikuks kasutamiseks, suplemine ja ujumine on omal vastutusel, rannaalal puudub järelvalve</p>
-                <p class="text-center border-0 mt-8 mb-4 border-black-1000 text-2xl">Viibimine sildadel, kaidel ja purretel</p>
+                <p class="text-center border-0 mt-12 mb-4 border-black-1000 text-xl font-bold">Viibimine sildadel, kaidel ja purretel</p>
                 <p>Ära jäta lapsi järelvalveta sõltumata nende vanusest</p>
                 <p>Järgi kõiki ohutusnõudeid</p>
                 <p>Ära jookse, tõukle ega proovi kedagi vette lükata</p>
                 <p>Ära hüppa vette pea ega jalad ees selleks mitte ettenähtud kohas</p>
                 <p>Ära uju sildade, kaide , purrete jms. alla</p>
                 <p>Sillad ja kaid ei ole mõeldud hüppamiseks</p>
-                <p class="text-center border-0 mt-8 mb-4 border-black-1000 text-2xl">Kasulikud kontaktid</p>
+                <p class="text-center border-0 mt-12 mb-4 border-black-1000 text-xl font-bold">Kasulikud kontaktid</p>
                 <p>Enda või teiste terviserikete või muude ohtude korral helista häirekeskuse lühinumbril 112</p>
                 <p>Sadamast või supluskohast leitud vigastatud või haigetest lindudest ja loomadest teavita Keskkonnainspektsiooni telefonil 131</p>
                 <p>Lõhutud või rikutud inventari, suplusala heakorra, muude kaebuste või ettepanekute puhul võtta ühendust sadam@muratsi.ee</p>
-                <p class="text-center border-0 mb-4 mt-20 border-black-1000 text-2xl">Hoiame puhtust ja korda ning veedame mõnusalt aega Muratsi päikese all!</p>
+                <p class="text-center border-0 mb-4 mt-20 border-black-1000 text-xl font-bold">Hoiame puhtust ja korda ning veedame mõnusalt aega Muratsi päikese all!</p>
             </div>
         </div>
     </div>

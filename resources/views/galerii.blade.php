@@ -53,8 +53,8 @@
   <div class="container mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
     <div class="sm:flex sm:mt-8">
       <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">
-        <h1 class="text-white text-3xl">Muratsi sadama talgud 2020</h1>
-        <p class="text-white text-xl">Pildid: Saarte hääl</p>
+        <h1 class="text-white text-xl font-bold">Muratsi sadama talgud 2020</h1>
+        <p class="text-white ">Pildid: Saarte hääl</p>
         <div class="bg-blue-700 flex flex-col mb-14">
           <div class="slideshow-container pt-4 self-center">
             <div class="mySlides1"><img src="/img/talgud2020/gal1.png" style="width:100%"></div>
@@ -94,8 +94,8 @@
             <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
         </div>
-        <h1 class="text-white text-3xl">Muratsi sadam 1960-1980</h1>
-        <p class="text-white text-xl">Pildid: Argo Sepp</p>
+        <h1 class="text-white text-xl font-bold">Muratsi sadam 1960-1980</h1>
+        <p class="text-white">Pildid: Argo Sepp</p>
         <div class="bg-blue-700 flex flex-col">
           <div class="slideshow-container pt-4 self-center">
             <div class="mySlides2"><img src="/img/60-80/img1.png" style="width:100%"></div>
