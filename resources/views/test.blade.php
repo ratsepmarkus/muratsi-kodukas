@@ -31,7 +31,7 @@
     list-style-type: none;
     position: relative;
     height: 100%;
-    width: 75%;
+    width: 70%;
   }
   .navigation ul li {
     display: inline-block;
@@ -80,39 +80,38 @@
         </nav>
       </div>
     </div>
-  <header class="bg-nav-bg bg-no-repeat bg-cover bg-center">
-    <img src="/img/logo.png" alt="logo" class="mb-64 h-36 sm:h-44 md:h-52 lg:h-60">
-    <?php /*WEATHER DATA*/?>
-    <div class="flex text-center text-xs md:text-lg font-bold justify-end pr-4 md:pr-12">
-        <div class="bg-black bg-opacity-40 p-2">
-          <h1 class="text-white">Üldine ilm</h1>
-          <p  class="text-yellow-400" id="desc"></p>
-        </div>
-        <div class="bg-black bg-opacity-40 p-2 mx-4">
-          <h1 class="text-white">Temperatuur</h1>
-          <p class="text-yellow-400" id="temp"></p>
-        </div>
-        <div class="bg-black bg-opacity-40 p-2">
-          <h1 class="text-white">Tuul</h1>
-          <p class="text-yellow-400" id="wind"></p>
-        </div>
-    </div>
-    <nav class="navigation flex items-center invisible lg:visible">
-      <?php /*nav*/?>
-      <svg class="svg-wave" width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1920 300H0V0C435.72 154.841 831.391 213.662 1920 247.761V300Z" fill="#1D4ED8"/></svg>
-      <ul>
-        <li><a class="px-2 py-2 mt-2 text-md font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">AVALEHT</a></li>
-        <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/kontakt">KONTAKT</a></li>
-        <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/tasud">TASUD</a></li>
-        <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/eeskirjad">EESKIRJAD</a></li>
-        <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/uritused">ÜRITUSED</a></li>
-        <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/visioon">VISIOON</a></li>
-        <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/galerii">GALERII</a></li>
-        <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/taname">TÄNAME</a></li>
-      </ul>
-    </nav>
-  </header>
-    
-  <script src="/script.js"></script>
+    <header class="bg-nav-bg bg-no-repeat bg-cover bg-center">
+        <img src="/img/logo.png" alt="logo" class="mb-40 lg:mb-64 h-36 sm:h-44 md:h-52 lg:h-60">
+        <nav class="navigation flex items-center invisible lg:visible">
+            <?php /*nav*/?>
+            <svg class="svg-wave" width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1920 300H0V0C435.72 154.841 831.391 213.662 1920 247.761V300Z" fill="#1D4ED8"/></svg>
+            <ul>
+              <li><a class="px-2 py-2 mt-2 text-md font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">AVALEHT</a></li>
+              <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/kontakt">KONTAKT</a></li>
+              <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/tasud">TASUD</a></li>
+              <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/eeskirjad">EESKIRJAD</a></li>
+              <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/uritused">ÜRITUSED</a></li>
+              <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/visioon">VISIOON</a></li>
+              <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/galerii">GALERII</a></li>
+              <li><a class="px-2 py-2 mt-2 text-md font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/taname">TÄNAME</a></li>
+            </ul>
+          <?php /*WEATHER DATA*/?>
+            <div class="flex text-center text-xs lg:text-base font-bold justify-end mr-4 md:mr-12 visible items-center pb-20">
+                <div class="bg-black bg-opacity-50 p-2">
+                    <h1 class="text-white">Üldine</h1>
+                    <p  class="text-yellow-400" id="desc"></p>
+                </div>
+                <div class="bg-black bg-opacity-50 p-2 mx-4 h-full">
+                    <h1 class="text-white">Temp.</h1>
+                    <p class="text-yellow-400" id="temp"></p>
+                </div>
+                <div class="bg-black bg-opacity-50 p-2">
+                    <h1 class="text-white">Tuul</h1>
+                    <p class="text-yellow-400" id="wind"></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script src="/script.js"></script>
 </body>
 </html>
