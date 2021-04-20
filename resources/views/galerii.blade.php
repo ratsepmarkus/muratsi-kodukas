@@ -49,6 +49,13 @@
         </nav>
       </div>
     </div>
+
+    <?php /*------IMG what moves------------*/?>
+    <div class=" invisible w-60 xl:visible fixed">   
+        <img src="/img/vapid nshit.png" alt="" class="w-32 fixed">
+    </div>
+
+
   <?php /*MAIN----------------------------------------------------------------------*/?>
   <div class="container mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
     <div class="sm:flex sm:mt-8">

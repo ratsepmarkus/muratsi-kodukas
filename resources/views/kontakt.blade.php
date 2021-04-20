@@ -42,6 +42,11 @@
       </div>
     </div>
     <?php /* MAIN--------------------------------------*/?>
+    <?php /*------IMG what moves------------*/?>
+    <div class=" invisible w-60 xl:visible fixed">   
+        <img src="/img/vapid nshit.png" alt="" class="w-32 fixed">
+    </div>
+
     <div class="container mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">

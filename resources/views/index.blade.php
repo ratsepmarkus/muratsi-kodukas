@@ -112,7 +112,12 @@
           </div>
       </nav>
   </header>
-  
+
+<?php /*------IMG what moves------------*/?>
+<div class=" invisible w-60 xl:visible fixed">   
+ <img src="/img/vapid nshit.png" alt="" class="w-32 fixed">
+</div>
+
   <?php /*POSTS*/?>
   <div class="container mx-auto mb-12 sm:px-6 flex text-white flex-col lg:flex-row mt-12">
     <div class="mx-auto mb-12 px-4 bg-blue-700 rounded-2xl shadow-xl">
