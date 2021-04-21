@@ -17,10 +17,23 @@
   .next {right: 0;border-radius: 3px 0 0 3px;}
   /* On hover, add a grey background color */
   .prev:hover, .next:hover {background-color: #f1f1f1;color: black;}
+  .sidebar {
+  position: fixed;
+  z-index: 1;
+  top: 75%;
+  overflow-x: hidden;
+  }
+  .badge{
+    height: 10rem;
+    opacity: 90%;
+  }
 </style>
 </head>
 <body class="bg-blue-900 bg-background bg-no-repeat">
-
+  <?php /*------IMG what moves------------*/?>
+  <div class="sidebar">
+   <img src="/img/badge.png" class="badge">
+  </div>
   <?php /* NAV--------------------------------- */ ?>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800 border-b-2">
@@ -48,11 +61,6 @@
             <div @click.away="open = false" class="relative" x-data="{ open: false }"></div>
         </nav>
       </div>
-    </div>
-
-    <?php /*------IMG what moves------------*/?>
-    <div class=" invisible w-60 xl:visible fixed">   
-        <img src="/img/vapid nshit.png" alt="" class="w-32 fixed">
     </div>
 
 

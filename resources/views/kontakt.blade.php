@@ -10,9 +10,23 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
         * {font-family: 'Montserrat', sans-serif;}
         textarea {resize: none;}
+        .sidebar {
+        position: fixed;
+        z-index: 1;
+        top: 75%;
+        overflow-x: hidden;
+        }
+        .badge{
+          height: 10rem;
+          opacity: 90%;
+        }
     </style>
 </head>
 <body class="bg-blue-900 bg-background">
+    <?php /*------IMG what moves------------*/?>
+    <div class="sidebar invisible md:visible">
+     <img src="/img/badge.png" class="badge">
+    </div>
     <?php /* NAV--------------------------------- */ ?>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800 border-b-2">
@@ -42,10 +56,7 @@
       </div>
     </div>
     <?php /* MAIN--------------------------------------*/?>
-    <?php /*------IMG what moves------------*/?>
-    <div class=" invisible w-60 xl:visible fixed">   
-        <img src="/img/vapid nshit.png" alt="" class="w-32 fixed">
-    </div>
+
 
     <div class="container mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">

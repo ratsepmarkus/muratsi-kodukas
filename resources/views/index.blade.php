@@ -49,12 +49,28 @@
   .navigation ul li:nth-child(6) { --t: 1.6; --l: 7.6;}
   .navigation ul li:nth-child(7) { --t: 1.7; --l: 9; }
   .navigation ul li:nth-child(8) { --t: 1.8; --l: 10.5;}
+
+  .sidebar {
+  position: fixed;
+  z-index: 1;
+  top: 75%;
+  overflow-x: hidden;
+  }
+  .badge{
+    height: 10rem;
+    opacity: 90%;
+  }
   </style>
 </head>
 
 <body class="bg-blue-900 bg-background overflow-x-hidden">
+  <?php /*------IMG what moves------------*/?>
+  <div class="sidebar invisible md:visible">
+   <img src="/img/badge.png" class="badge">
+  </div>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800 border-b-2 visible lg:hidden">
+  
     <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row md:px-6 lg:px-8">
       <div class="p-4 flex flex-row items-center justify-between">
         <a href="#">
@@ -68,10 +84,10 @@
         </button>
       </div>
       <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
-          <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">AVALEHT</a>
+          <a class="px-2 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">AVALEHT</a>
           <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/kontakt">KONTAKT</a>
           <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/tasud">TASUD</a>
-          <a class="px-2 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/eeskirjad">EESKIRJAD</a>
+          <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/eeskirjad">EESKIRJAD</a>
           <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/uritused">ÜRITUSED</a>
           <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/visioon">VISIOON</a>
           <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/galerii">GALERII</a>
@@ -113,10 +129,7 @@
       </nav>
   </header>
 
-<?php /*------IMG what moves------------*/?>
-<div class=" invisible w-60 xl:visible fixed">   
- <img src="/img/vapid nshit.png" alt="" class="w-32 fixed">
-</div>
+
 
   <?php /*POSTS*/?>
   <div class="container mx-auto mb-12 sm:px-6 flex text-white flex-col lg:flex-row mt-12">
@@ -125,8 +138,8 @@
         <h1 class="font-bold text-yellow-400 text-4xl mb-8">TEATED</h1>
         <div>
           <div class="flex mb-4 justify-between">
-            <a href="#" class="font-bold text-lg sm:text-xl">Muratsi sadamas alustati ujuvkai paigaldust</a>
-            <p class="text-yellow-400">22.02.2021</p>
+            <p href="#" class="font-bold text-lg sm:text-xl">Muratsi sadamas alustati ujuvkai paigaldust</p>
+            <p class="text-yellow-400">20.04.2021</p>
           </div>
           <div class="flex flex-col sm:flex-row items-start">
             <p class="text-sm sm:text-base">Jaanuari algul alustati kaevetöödega Muratsi sadama akvatooriumis, kus väljakaevatava osa asemel tuleb ujuvkai, mis annab sadamale juurde 16 paadi kohta.
@@ -134,29 +147,29 @@
               Projekti kogu maksumus on 57 492€, millest PRIA toetus on 51 743€. Omaosaluse osalise katmise panustas Saaremaa vald.
               Peatöövõtja on Kuressaare Ehitus OÜ ning alltöövõtja Sikasaare Vanametall OÜ.
               Tööd planeeritakse lõpetada aprillis.</p>
-            <img src="/img/postitus1.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
+            <img src="/img/posts/postitus1.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
           </div>
         </div>
 
         <div class="border-t-2 border-b-2 border-gray-800 py-8 my-8">
           <div class="flex mb-4 justify-between">
-            <a href="#" class="font-bold text-lg sm:text-xl">Kena Tegu 2020 nominent</a>
-            <p class="text-yellow-400">22.02.2021</p>
+            <p href="#" class="font-bold text-lg sm:text-xl">Kena Tegu 2020 nominent</p>
+            <p class="text-yellow-400">20.04.2021</p>
           </div>
           <div class="flex flex-col sm:flex-row items-start">
             <p class="text-sm sm:text-base">Saaremaa Arenduskeskuse poolt korraldatud tunnustusüritusel saime märgitud kui Kena Tegu 2020 nominent. Tunnustus saadi uute tegevustega sadamaalal, kui kogukonna kaasabil korrastati haljastus ning suplusala. PRIA toetusega rajati uus mänguväljak lastele ja noortele ning täiskasvanutele väli tervisespordikompleks
             </p>
-            <img src="/img/postitus2.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
+            <img src="/img/posts/postitus2.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
           </div>
         </div>
 
         <div class="flex mb-4 justify-between">
-          <a href="#" class="font-bold text-lg sm:text-xl">Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi</a>
-          <p class="text-yellow-400">22.02.2021</p>
+          <p href="#" class="font-bold text-lg sm:text-xl">Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi</p>
+          <p class="text-yellow-400">20.04.2021</p>
         </div>
         <div class="flex flex-col sm:flex-row items-start">
           <p class="text-sm sm:text-base">MTÜ-de Muratsi Kalur ja Muratsi Küla Selts korraldatud talgutele kogunes laupäeva hommikul veerandsada külaelanikku.  Suur osa tööst sai tehtud masinate abil: killustik ja muld laiali laotatud ning maapind enam-vähem tasaseks silutud. Oma käterammule lootnud talguliste hooleks jäi maapind riisuda, kivid ära korjata, muru külvata ja muld siledaks rullida, samuti võrkpalliplatsi jaoks toodud liiv laiali ajada ja siluda. Mehed tegid segu ja paigaldasid muruplatsile äärekivid. Kolme tunniga said haljastustööd tehtud ja rannaala korda. Endiste lagunenud ja ohtlikuks muutunud atraktsioonide asemel ootavad oma küla elanikke ja külalisi nüüd mängulinnak, liivakast, kiiged, pisike karussell, sportimiskompleks, kolm erineva kõrgusega korvilauda, uued pingid, riietumiskabiin ja jalgrattahoidja. “Tänu Saaremaa vallale saime randa ka uue liiva,” lausus Hiie. Tema sõnul on kumu uuest mänguväljakust juba levida jõudnud – lapsi turnib atraktsioonidel iga päev. MTÜ Saarte Kalandus toetas Euroopa Merendus- ja Kalandusfondi sügisesest taotlusvoorust Muratsi Kaluri projekti sadama mänguväljaku- ja tervisekompleksi rajamiseks 48 627  euroga. Vajaliku omaosaluse aitasid katta Saaremaa vald ja Muratsi elanikud. “Kuna meie kogukonda kuulub palju häid inimesi, kes said appi tulla oma rasketehnikaga või organiseerida sadamaalale oma vahenditest liiva, mulda ja killustikku, sai see töö plaanitust suuremalt ette võetud, et sadamaala terviklikumalt ilusamaks teha. Samuti planeerisime parkimisala ja sõiduala suuremaks, et nii kutselised kui ka hobikalurid saaksid sadamaalal paremini tegutseda,” rääkis Siim Hiie.</p>
-          <img src="/img/postitus3.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
+          <img src="/img/posts/postitus3.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
         </div>
       </div>
     </div>
