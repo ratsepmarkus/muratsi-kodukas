@@ -30,5 +30,8 @@ Route::get('/galerii', function () {
 Route::get('/taname', function () {
     return view('taname');
 });
+Route::get('/test', function () {
+    return view('test');
+});
 
 Route::get('/dashboard/blog', function(){})->middleware('auth')->name('blog');
