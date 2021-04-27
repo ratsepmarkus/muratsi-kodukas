@@ -64,7 +64,7 @@
                 <div class="flex flex-col sm:flex-row justify-between py-8 sm:py-0 flex-wrap">
                     <div class="mb-0">
                         <h1 class="sm:text-3xl font-bold text-yellow-400 text-2xl mb-8">VÕTA MEIEGA ÜHENDUST</h1>
-                        <form action="https://formsubmit.co/muratsisadam@gmail.com" method="POST" class="flex flex-col text-black">
+                        <form action="https://formsubmit.co/sadam@muratsi.ee" method="POST" class="flex flex-col text-black">
                             <div>
                                 <input type="text" name="name" placeholder="Nimi" required class="border-black border-b-4 w-max">
                                 <input type="email" name="email" placeholder="Email" required class="border-black border-b-4 w-max">
