@@ -36,7 +36,7 @@
         </nav>
       </div>
     </div>
-    <?php/*MAIN ----------------------------*/ ?>
+    <?php /*MAIN ----------------------------*/ ?>
     <div class="container mx-auto mb-8 mt-8 px-6 bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 text-white flex-none md:flex-row py-8 h-96">

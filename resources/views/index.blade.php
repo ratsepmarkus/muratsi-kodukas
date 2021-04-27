@@ -40,7 +40,7 @@
   nav ul li:nth-child(1) { --t: 0.3; --l: 0.5; }
   nav ul li:nth-child(2) { --t: 0.6; --l: 1.7; }
   nav ul li:nth-child(3) { --t: 0.9; --l: 3; }
-  nav ul li:nth-child(4) { --t: 1.2; --l: 4.4;} 
+  nav ul li:nth-child(4) { --t: 1.2; --l: 4.4;}
   nav ul li:nth-child(5) { --t: 1.4; --l: 6.1;}
   nav ul li:nth-child(6) { --t: 1.6; --l: 7.6;}
   nav ul li:nth-child(7) { --t: 1.7; --l: 9; }
