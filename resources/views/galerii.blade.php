@@ -31,7 +31,7 @@
 </head>
 <body class="bg-blue-900 bg-background bg-no-repeat">
   <?php /*------IMG what moves------------*/?>
-  <div class="sidebar">
+  <div class="sidebar invisible md:visible">
    <img src="/img/badge.png" class="badge">
   </div>
   <?php /* NAV--------------------------------- */ ?>
