@@ -23,6 +23,7 @@
   top: 75%;
   overflow-x: hidden;
   }
+
   .badge{
     height: 10rem;
     opacity: 90%;
@@ -63,7 +64,7 @@
       </div>
     </div>
 
-
+    <?php /* asdasdasd--------------------------- */ ?>
   <?php /*MAIN----------------------------------------------------------------------*/?>
   <div class="container mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
     <div class="sm:flex sm:mt-8">
