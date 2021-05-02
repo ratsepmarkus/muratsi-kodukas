@@ -69,7 +69,7 @@
           </div>
           <div class="w-1/6 px-2">
             <div class="bg-gray-400">
-              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img4.png', imgModalDesc: '' })" class="cursor-pointer">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img4.png', imgModalDesc: 'sad' })" class="cursor-pointer">
                 <img alt="Placeholder" class="object-fit w-full" src="/img/visioon/img4.png">
               </a>
             </div>
