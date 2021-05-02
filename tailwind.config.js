@@ -15,13 +15,19 @@ module.exports = {
             backgroundImage: theme => ({
                 'background': "url('/img/poly-bg.png')",
                 'nav-bg': "url('/img/nav-bg.png')",
-               })
+            }),
+            backgroundColor: theme => ({
+                'primary': '#022A52',
+                'secondary': '#ffed4a',
+                'danger': '#e3342f',
+            })
         },
     },
 
     variants: {
         extend: {
             opacity: ['disabled'],
+            backgroundColor: ['active'],
         },
     },
 
