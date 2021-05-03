@@ -133,7 +133,7 @@
 
   <?php /*POSTS*/?>
   <div class="container mx-auto mb-12 sm:px-6 flex text-white flex-col lg:flex-row mt-12">
-    <div class="mx-auto mb-12 px-4 bg-blue-700 rounded-2xl shadow-xl">
+    <div class="mx-auto px-4 bg-blue-700 rounded-2xl shadow-xl">
       <div class="mt-8 sm:mt-0 sm:w-full pb-8 sm:p-8 text-white md:flex-row">
         <h1 class="font-bold text-yellow-400 text-4xl mb-8">TEATED</h1>
         <div>
@@ -144,9 +144,7 @@
           <div class="flex flex-col sm:flex-row items-start">
             <p class="text-sm sm:text-base">Jaanuari algul alustati kaevetöödega Muratsi sadama akvatooriumis, kus väljakaevatava osa asemel tuleb ujuvkai, mis annab sadamale juurde 16 paadi kohta.
               Projekti ''Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala-ja mereturisimi arendamine'' jaoks saadi rahastus läbi Saarte Kalanduse EMKF kalanduspiirkonna kohaliku arengu strateegia 3.3 kaudu.
-              Projekti kogu maksumus on 57 492€, millest PRIA toetus on 51 743€. Omaosaluse osalise katmise panustas Saaremaa vald.
-              Peatöövõtja on Kuressaare Ehitus OÜ ning alltöövõtja Sikasaare Vanametall OÜ.
-              Tööd planeeritakse lõpetada aprillis.</p>
+            </p>
             <img src="/img/posts/postitus1.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
           </div>
         </div>
@@ -157,7 +155,7 @@
             <p class="text-yellow-400">20.04.2021</p>
           </div>
           <div class="flex flex-col sm:flex-row items-start">
-            <p class="text-sm sm:text-base">Saaremaa Arenduskeskuse poolt korraldatud tunnustusüritusel saime märgitud kui Kena Tegu 2020 nominent. Tunnustus saadi uute tegevustega sadamaalal, kui kogukonna kaasabil korrastati haljastus ning suplusala. PRIA toetusega rajati uus mänguväljak lastele ja noortele ning täiskasvanutele väli tervisespordikompleks
+            <p class="text-sm sm:text-base">Saaremaa Arenduskeskuse poolt korraldatud tunnustusüritusel saime märgitud kui Kena Tegu 2020 nominent. Tunnustus saadi uute tegevustega sadamaalal, kui kogukonna kaasabil korrastati haljastus ning suplusala.
             </p>
             <img src="/img/posts/postitus2.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
           </div>
@@ -168,20 +166,20 @@
           <p class="text-yellow-400">20.04.2021</p>
         </div>
         <div class="flex flex-col sm:flex-row items-start">
-          <p class="text-sm sm:text-base">MTÜ-de Muratsi Kalur ja Muratsi Küla Selts korraldatud talgutele kogunes laupäeva hommikul veerandsada külaelanikku.  Suur osa tööst sai tehtud masinate abil: killustik ja muld laiali laotatud ning maapind enam-vähem tasaseks silutud. Oma käterammule lootnud talguliste hooleks jäi maapind riisuda, kivid ära korjata, muru külvata ja muld siledaks rullida, samuti võrkpalliplatsi jaoks toodud liiv laiali ajada ja siluda. Mehed tegid segu ja paigaldasid muruplatsile äärekivid. Kolme tunniga said haljastustööd tehtud ja rannaala korda. Endiste lagunenud ja ohtlikuks muutunud atraktsioonide asemel ootavad oma küla elanikke ja külalisi nüüd mängulinnak, liivakast, kiiged, pisike karussell, sportimiskompleks, kolm erineva kõrgusega korvilauda, uued pingid, riietumiskabiin ja jalgrattahoidja. “Tänu Saaremaa vallale saime randa ka uue liiva,” lausus Hiie. Tema sõnul on kumu uuest mänguväljakust juba levida jõudnud – lapsi turnib atraktsioonidel iga päev. MTÜ Saarte Kalandus toetas Euroopa Merendus- ja Kalandusfondi sügisesest taotlusvoorust Muratsi Kaluri projekti sadama mänguväljaku- ja tervisekompleksi rajamiseks 48 627  euroga. Vajaliku omaosaluse aitasid katta Saaremaa vald ja Muratsi elanikud. “Kuna meie kogukonda kuulub palju häid inimesi, kes said appi tulla oma rasketehnikaga või organiseerida sadamaalale oma vahenditest liiva, mulda ja killustikku, sai see töö plaanitust suuremalt ette võetud, et sadamaala terviklikumalt ilusamaks teha. Samuti planeerisime parkimisala ja sõiduala suuremaks, et nii kutselised kui ka hobikalurid saaksid sadamaalal paremini tegutseda,” rääkis Siim Hiie.</p>
+          <p class="text-sm sm:text-base">MTÜ-de Muratsi Kalur ja Muratsi Küla Selts korraldatud talgutele kogunes laupäeva hommikul veerandsada külaelanikku.  Suur osa tööst sai tehtud masinate abil: killustik ja muld laiali laotatud ning maapind enam-vähem tasaseks silutud.</p>
           <img src="/img/posts/postitus3.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
         </div>
       </div>
     </div>
 
-    <div class="flex flex-col sm:px-6 px-0 place-self-center sm:place-self-start">
-      <div class="mb-12 w-72 p-4 bg-blue-700 rounded-2xl text-center align-middle flex flex-col justify-center shadow-xl">
+    <div class="flex lg:flex-col justify-between lg:ml-16 xl:ml-32 mt-12 lg:mt-0">
+      <div class="lg:mb-40 w-80 h-56 p-4 bg-blue-700 rounded-2xl text-center align-middle flex flex-col justify-center shadow-xl">
         <a href="" class="font-bold text-xl hover:text-yellow-400"><u>SADAMA OTSEPILT</u></a>
         <p>Klõpsa lingile, et näha sadama kaamerast otsepilti</p>
       </div>
 
-      <div class="w-72 p-4 bg-blue-700 rounded-2xl text-center align-middle flex flex-col justify-center shadow-xl">
-        <p>Reklaam</p>
+      <div class="w-80 h-56 p-4 bg-blue-700 rounded-2xl text-center align-middle flex flex-col justify-center shadow-xl">
+        <p></p>
       </div>
     </div>
   </div>
