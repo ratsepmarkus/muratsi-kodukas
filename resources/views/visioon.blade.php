@@ -55,7 +55,29 @@
       </div>
     </div>
     <?php /*MAIN ----------------------------*/ ?>
-    <div class="container mx-auto mb-8 mt-8 px-6 bg-blue-700 rounded-2xl">
+    <?php /*------test------------*/?>
+            <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+        <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
+          <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+            <div @click.away="imgModal = ''" class="flex flex-col overflow-auto">
+              <div class="">
+                <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+                  <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <div class="p-2">
+                <img :alt="imgModalSrc" class="object-contain h-full" :src="imgModalSrc">
+                <p x-text="imgModalDesc" class="text-center text-white"></p>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <?php /*------test------------*/?>
+    <div class="container mx-auto mb-8 mt-8  bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 text-white flex-none md:flex-row py-8">
                 <h1 class="sm:text-3xl font-bold text-yellow-400 text-2xl mb-8">MEIE VISIOON</h1>
@@ -64,32 +86,142 @@
                 <h1 class="font-bold text-xl mt-12">2017 - 2025</h1>
                 <p class="mt-4 mb-4">Muratsi Kalur MTÜ visoon ja plaan on teha sadamaala korda, mille tulemusel tulevad kalastajatele ujuvkaid ning betooni kai kala lassimiseks. Uus mänguväljak ja tervisekompleks nii Muratsi küla inimestele kui ka külalistele väljas poolt asulat.</p>
                 <p class="mb-4">Kogukonna maja – maja, kus saaksid vajadusel kalurid oma asju hoia, külarahvas koosolekuid pidada, talisuplejad sooja sauna teha ning suviti terrassil jalga sirutada.</p>
-                <div class="flex flex-wrap pb-4 mb-6 ">
-                    <img src="/img/visioon/img1.png" alt="" class="h-40 self-center ">
-                    <img src="/img/visioon/img2.png" alt="" class="h-40 self-center px-16">
-                    <img src="/img/visioon/img3.png" alt="" class="h-40 self-center ">
-                    <img src="/img/visioon/img4.png" alt="" class="h-40 self-center px-16">
-                </div>
+                <?php /*------test------------*/?>
+       <div x-data="{}" class="container mx-auto mb-8 mt-8  bg-blue-700 rounded-2xl">
+        <div class="sm:flex sm:mt-8">
+         <div class="flex flex-wrap pb-4 mb-6">
+          <div class=" px-6">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img1.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36" src="/img/visioon/img1.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img2.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36 " src="/img/visioon/img2.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img3.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36" src="/img/visioon/img3.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img4.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36 " src="/img/visioon/img4.png">
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
                 <h1 class="font-bold text-xl">2011 – 2017</h1>
                 <p class="mt-4 mb-4">Muratsi Küla Seltsil olid suured plaanid sadama alaga. Planeeritud olid koostöös arhitektidega ja projekteerijatega sadamale külaseltsimaja erinevate võimalustega, samuti suurendada suplusala, kus kõrval on nii väli korvpalliväljak kui ka võrkpalli mängimiseks liivaväljak. Külarahvas hoidis sadamat hästi!
                 Leiti vahendeid ja tehti ise vajalikud tööd, et lastele oleks mängimiseks liivakast ja kiiged. Samuti korraldati iga kevadel talgud sadamaala korrastamiseks ning nii mõnigi vabaõhu üritus sai suve jooksul peetud. Sadamast oli saanud Muratsi küla inimeste lemmik vabaaja veetmis koht.</p>
-                <div class="flex flex-wrap pb-4 mb-6">
-                    <img src="/img/visioon/img5.png" alt="" class="h-40 self-center ">
-                    <img src="/img/visioon/img6.png" alt="" class="h-40 self-center px-14">
-                    <img src="/img/visioon/img7.png" alt="" class="h-40 self-center ">
-                    <img src="/img/visioon/img8.png" alt="" class="h-40 self-center px-14">
-                    <img src="/img/visioon/img9.png" alt="" class="h-40 self-center ">
-                </div>
+       <div x-data="{}" class="container mx-auto mb-8 mt-8  bg-blue-700 rounded-2xl">
+        <div class="sm:flex sm:mt-8">
+         <div class="flex flex-wrap pb-4 mb-6">
+          <div class=" px-6">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img5.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36" src="/img/visioon/img5.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img6.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36 " src="/img/visioon/img6.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img7.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36 " src="/img/visioon/img7.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img8.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36 " src="/img/visioon/img8.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img9.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36" src="/img/visioon/img9.png">
+              </a>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
                 <h1 class="font-bold text-xl mb-4">1991 – 2010</h1>
                 <p class="mb-4">Toonane Saare maakonna suurim omavalitsuslik vald oli Kaarma. Kaarma vald väljastas suurte plaanidega detailiplaneeringu, kus oli mõeldud suur maja nii kaluritele kui ka külainimestele. Sadamaalale oli mõeldud ligi 50 kohta väikepaatidele. Sadam kuulus rendilepingu alusel kutselistele kaluritele, kes tegid omale ühingu.</p>
                 <p class="mb-4">Kuigi plaanid teoks ei saanud, siis hoidsid sadamaalal korda kutselised kalurid, kes niitsid ja koristasid sadamat järjepidevalt. Kaarma valla poolt sai loodud ka praegu suplemiskoht, kui toodi suurtes koguses liiva nii kevadel kui ka talvel jää peale, et merepõhi oleks sõbralikum. 2000-ndatel toimusid juba suuremad koristused ja talgud külarahva poolt. Korraldati külalistele ja noortele erinevaid õpitubasid rannakalanduse teemadel ning nii mõnigi jaanipäev sai sadamas peetud.  Suuremaid kordaminekuid ning erinevaid projekte kirjutas sadamale toonane Kuressaare linnapeana ja hiljem Kaarma vallavanemana tegutsenud Ülo Vevers, kes koos elukaaslase Dailiga tänaseni sadama tegemistele kaasa aitab..</p>
-                <div class="flex flex-wrap pb-4 mb-6 space-x-46">
-                    <img src="/img/visioon/img10.png" alt="" class="h-40 self-center ">
-                    <img src="/img/visioon/img11.png" alt="" class="h-40 self-center px-14">
-                    <img src="/img/visioon/img12.png" alt="" class="h-40 self-center ">
-                    <img src="/img/visioon/img13.png" alt="" class="h-40 self-center px-14">
-                    <img src="/img/visioon/img14.png" alt="" class="h-40 self-center ">
-                </div>
+       <div x-data="{}" class="container mx-auto mb-8 mt-8  bg-blue-700 rounded-2xl">
+        <div class="sm:flex sm:mt-8">
+         <div class="flex flex-wrap pb-4 mb-6">
+          <div class=" px-6">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img10.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36" src="/img/visioon/img10.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img11.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36 " src="/img/visioon/img11.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img12.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36 w-48 " src="/img/visioon/img12.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img13.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36 " src="/img/visioon/img13.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img14.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36" src="/img/visioon/img14.png">
+              </a>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
                 <h1 class="font-bold text-xl mb-4">1960 – 1990</h1>
 
                 <p>Muratsi sadama kohta on vähe kirja pandud ning Saaremaa arhiivis puudub selle kohta mis siin sellel ajavahemikul toimus….sellegipoolest , siis ajaloolist hõngu pakkuvad tol ajal sadamaalal tegutsenud kalurid ja külainimesed.</p>
@@ -99,13 +231,52 @@
                     <p>• Sadamaala oli lukus ja ööpäeva ringselt oli sadamal valve. Sadamavaht registreeris kõik minekud ja tulekud ning seda kontrollis ka piirivalve. Selleks peeti logiraamatud, kus kirja sai pandud kõik sõidud ja merelt tulnud saagid.</p>
                 </div>
                 <p>Vello Salong, Maidu Ots, Daili Tuuling, Argo Sepp.</p>
-                <div class="flex flex-wrap pb-4 mb-16 mt-12">
-                    <img src="/img/visioon/img15.png" alt="" class="h-40 self-center ">
-                    <img src="/img/visioon/img16.png" alt="" class="h-40  self-center px-16">
-                    <img src="/img/visioon/img17.png" alt="" class="h-40 self-center ">
-                    <img src="/img/visioon/img18.png" alt="" class="h-40 self-center px-16">
-                    <img src="/img/visioon/img19.png" alt="" class="h-40 self-center ">
-                </div>
+       <div x-data="{}" class="container mx-auto mb-8 mt-8 px-6 bg-blue-700 rounded-2xl">
+        <div class="sm:flex sm:mt-8">
+         <div class="flex flex-wrap pb-4 mb-6">
+          <div class=" px-6">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img15.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36 " src="/img/visioon/img15.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img16.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36" src="/img/visioon/img16.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img17.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36" src="/img/visioon/img17.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img18.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36 " src="/img/visioon/img18.png">
+              </a>
+            </div>
+          </div>
+
+          <div class=" px-6 pt-2">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img19.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36 w-40" src="/img/visioon/img19.png">
+              </a>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
             </div>
         </div>
     </div>
