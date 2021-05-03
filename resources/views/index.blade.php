@@ -206,8 +206,8 @@
               <div class="sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
                   <div class="flex flex-col text-white text-md">
                       <span class="my-2">Muratsi Kalur MTÜ</span>
-                      <span class="my-2">+372 5397 4722</span>
-                      <span class="my-2">sadam@muratsi.ee</span>
+                      <span class="my-2"><a href="tel:+372 5397 4722">+372 5397 4722</span>
+                      <span class="my-2"><a href="mailto:sadam@muratsi.ee">sadam@muratsi.ee</a></span>
                   </div>
                   <div class="flex flex-col text-white text-md my-8 sm:my-0">
                       <span class="my-2">Äriregistri kood 80413704</span>
