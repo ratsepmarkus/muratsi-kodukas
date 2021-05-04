@@ -25,8 +25,8 @@
 <body class="bg-blue-900 bg-background">
     <?php /*------IMG what moves------------*/?>
     <div class="sidebar invisible md:visible">
-     <img src="/img/badge.png" class="badge">
-    </div>
+        <a href="/taname"><img src="/img/badge.png" class="badge"></a>
+      </div>
     <?php /* NAV--------------------------------- */ ?>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800 border-b-2">

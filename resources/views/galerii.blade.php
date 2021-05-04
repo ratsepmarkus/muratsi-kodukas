@@ -5,6 +5,7 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+<script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
   * {font-family: 'Montserrat', sans-serif;}
@@ -34,7 +35,7 @@
 <body class="bg-blue-900 bg-background bg-no-repeat">
   <?php /*------IMG what moves------------*/?>
   <div class="sidebar invisible md:visible">
-   <img src="/img/badge.png" class="badge">
+    <a href="/taname"><img src="/img/badge.png" class="badge"></a>
   </div>
   <?php /* NAV--------------------------------- */ ?>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>

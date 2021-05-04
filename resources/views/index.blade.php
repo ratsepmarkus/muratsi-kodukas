@@ -66,7 +66,7 @@
 <body class="bg-blue-900 bg-background overflow-x-hidden">
   <?php /*------IMG what moves------------*/?>
   <div class="sidebar invisible md:visible">
-   <img src="/img/badge.png" class="badge">
+    <a href="/taname"><img src="/img/badge.png" class="badge"></a>
   </div>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800 border-b-2 visible lg:hidden">
@@ -114,7 +114,7 @@
         <?php /*WEATHER DATA*/?>
           <div class="flex text-center text-xs lg:text-base font-bold justify-end mr-4 md:mr-12 visible items-center pb-20">
               <div class="bg-black bg-opacity-50 p-2">
-                  <h1 class="text-white">Üldine</h1>
+                  <h1 class="text-white">Taevas</h1>
                   <p  class="text-yellow-400" id="desc"></p>
               </div>
               <div class="bg-black bg-opacity-50 p-2 mx-4 h-full">
