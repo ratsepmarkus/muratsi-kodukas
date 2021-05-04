@@ -89,8 +89,8 @@
                 <?php /*------test------------*/?>
        <div x-data="{}" class="container mx-auto mb-8 mt-8  bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
-         <div class="flex flex-wrap pb-4 mb-6">
-          <div class=" px-6">
+         <div class="flex flex-wrap pb-4 mb-6  w-full justify-between">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img1.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36" src="/img/visioon/img1.png">
@@ -98,7 +98,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img2.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36 " src="/img/visioon/img2.png">
@@ -106,7 +106,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img3.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36" src="/img/visioon/img3.png">
@@ -114,7 +114,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img4.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36 " src="/img/visioon/img4.png">
@@ -129,7 +129,7 @@
                 Leiti vahendeid ja tehti ise vajalikud tööd, et lastele oleks mängimiseks liivakast ja kiiged. Samuti korraldati iga kevadel talgud sadamaala korrastamiseks ning nii mõnigi vabaõhu üritus sai suve jooksul peetud. Sadamast oli saanud Muratsi küla inimeste lemmik vabaaja veetmis koht.</p>
        <div x-data="{}" class="container mx-auto mb-8 mt-8  bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
-         <div class="flex flex-wrap pb-4 mb-6">
+         <div class="flex flex-wrap pb-4 mb-6  w-full justify-between">
           <div class=" px-6">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img5.png'})" class="cursor-pointer">
@@ -138,7 +138,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img6.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36 " src="/img/visioon/img6.png">
@@ -146,7 +146,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img7.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36 " src="/img/visioon/img7.png">
@@ -154,7 +154,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img8.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36 " src="/img/visioon/img8.png">
@@ -162,7 +162,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img9.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36" src="/img/visioon/img9.png">
@@ -178,8 +178,8 @@
                 <p class="mb-4">Kuigi plaanid teoks ei saanud, siis hoidsid sadamaalal korda kutselised kalurid, kes niitsid ja koristasid sadamat järjepidevalt. Kaarma valla poolt sai loodud ka praegu suplemiskoht, kui toodi suurtes koguses liiva nii kevadel kui ka talvel jää peale, et merepõhi oleks sõbralikum. 2000-ndatel toimusid juba suuremad koristused ja talgud külarahva poolt. Korraldati külalistele ja noortele erinevaid õpitubasid rannakalanduse teemadel ning nii mõnigi jaanipäev sai sadamas peetud.  Suuremaid kordaminekuid ning erinevaid projekte kirjutas sadamale toonane Kuressaare linnapeana ja hiljem Kaarma vallavanemana tegutsenud Ülo Vevers, kes koos elukaaslase Dailiga tänaseni sadama tegemistele kaasa aitab..</p>
        <div x-data="{}" class="container mx-auto mb-8 mt-8  bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
-         <div class="flex flex-wrap pb-4 mb-6">
-          <div class=" px-6">
+         <div class="flex flex-wrap pb-4 mb-6 w-full justify-between">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img10.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36" src="/img/visioon/img10.png">
@@ -187,7 +187,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img11.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36 " src="/img/visioon/img11.png">
@@ -195,7 +195,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img12.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36 w-48 " src="/img/visioon/img12.png">
@@ -203,7 +203,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img13.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36 " src="/img/visioon/img13.png">
@@ -211,7 +211,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img14.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36" src="/img/visioon/img14.png">
@@ -233,8 +233,8 @@
                 <p>Vello Salong, Maidu Ots, Daili Tuuling, Argo Sepp.</p>
        <div x-data="{}" class="container mx-auto mb-8 mt-8 px-6 bg-blue-700 rounded-2xl">
         <div class="sm:flex sm:mt-8">
-         <div class="flex flex-wrap pb-4 mb-6">
-          <div class=" px-6">
+         <div class="flex flex-wrap pb-4 mb-6 w-full justify-between">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img15.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36 " src="/img/visioon/img15.png">
@@ -242,7 +242,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img16.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36" src="/img/visioon/img16.png">
@@ -250,7 +250,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img17.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36" src="/img/visioon/img17.png">
@@ -258,7 +258,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img18.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36 " src="/img/visioon/img18.png">
@@ -266,7 +266,7 @@
             </div>
           </div>
 
-          <div class=" px-6 pt-2">
+          <div class="">
             <div class="">
               <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img19.png'})" class="cursor-pointer">
                 <img alt="Placeholder" class="h-36 w-40" src="/img/visioon/img19.png">
