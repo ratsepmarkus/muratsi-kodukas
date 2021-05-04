@@ -3,20 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
   * {font-family: 'Montserrat', sans-serif;}
-  * {box-sizing: border-box}
-  .mySlides1, .mySlides2 {display: none}
-  img {vertical-align: middle;}
-  /* Slideshow container */
-  .slideshow-container {max-width: 1000px;position: relative;}
-  /* Next & previous buttons */
-  .prev, .next {cursor: pointer;position: absolute;top: 50%;width: auto;padding: 16px;margin-top: -22px;color: white;font-weight: bold;font-size: 18px;transition: 0.6s ease;border-radius: 0 3px 3px 0;user-select: none;}
-  /* Position the "next button" to the right */
-  .next {right: 0;border-radius: 3px 0 0 3px;}
-  /* On hover, add a grey background color */
-  .prev:hover, .next:hover {background-color: #f1f1f1;color: black;}
   .sidebar {
   position: fixed;
   z-index: 1;
@@ -27,6 +18,17 @@
     height: 10rem;
     opacity: 90%;
   }
+  *
+    body { font-family: sans-serif; }
+    html { overflow-y: scroll; }
+    .carousel {
+      background: #EEE;
+    }
+    .carousel img {
+      display: block;
+      height: 400px;
+      margin-right: 1rem;
+    }
 </style>
 </head>
 <body class="bg-blue-900 bg-background bg-no-repeat">
@@ -68,65 +70,62 @@
   <div class="container mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
     <div class="sm:flex sm:mt-8">
       <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">
-        <h1 class="sm:text-3xl font-bold text-yellow-400 text-2xl mb-8">GALERII</h1>
+        <h1 class="sm:text-3xl font-bold text-yellow-400 text-2xl mb-16">GALERII</h1>
         <h1 class="text-white text-xl font-bold">Muratsi sadama talgud 2020</h1>
         <p class="text-white ">Pildid: Saarte hääl</p>
         <div class="bg-blue-700 flex flex-col mb-14">
-          <div class="slideshow-container pt-4 self-center">
-            <div class="mySlides1"><img src="/img/talgud2020/gal1.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal2.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal3.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal4.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal5.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal6.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal7.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal8.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal9.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal10.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal11.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal12.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal13.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal14.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal15.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal16.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal17.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal18.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal19.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal20.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal21.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal22.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal23.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal24.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal25.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal26.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal27.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal28.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal29.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal30.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal31.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal32.png" style="width:100%"></div>
-            <div class="mySlides1"><img src="/img/talgud2020/gal33.png" style="width:100%"></div>
-            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          <div class="carousel" data-flickity='{ "imagesLoaded": true, "wrapAround": true }'>
+            <img src="/img/talgud2020/gal1.png" alt="">
+            <img src="/img/talgud2020/gal2.png" alt="">
+            <img src="/img/talgud2020/gal3.png" alt="">
+            <img src="/img/talgud2020/gal4.png" alt="">
+            <img src="/img/talgud2020/gal5.png" alt="">
+            <img src="/img/talgud2020/gal6.png" alt="">
+            <img src="/img/talgud2020/gal7.png" alt="">
+            <img src="/img/talgud2020/gal8.png" alt="">
+            <img src="/img/talgud2020/gal9.png" alt="">
+            <img src="/img/talgud2020/gal10.png" alt="">
+            <img src="/img/talgud2020/gal11.png" alt="">
+            <img src="/img/talgud2020/gal12.png" alt="">
+            <img src="/img/talgud2020/gal13.png" alt="">
+            <img src="/img/talgud2020/gal14.png" alt="">
+            <img src="/img/talgud2020/gal15.png" alt="">
+            <img src="/img/talgud2020/gal16.png" alt="">
+            <img src="/img/talgud2020/gal17.png" alt="">
+            <img src="/img/talgud2020/gal18.png" alt="">
+            <img src="/img/talgud2020/gal19.png" alt="">
+            <img src="/img/talgud2020/gal20.png" alt="">
+            <img src="/img/talgud2020/gal21.png" alt="">
+            <img src="/img/talgud2020/gal22.png" alt="">
+            <img src="/img/talgud2020/gal23.png" alt="">
+            <img src="/img/talgud2020/gal24.png" alt="">
+            <img src="/img/talgud2020/gal25.png" alt="">
+            <img src="/img/talgud2020/gal26.png" alt="">
+            <img src="/img/talgud2020/gal27.png" alt="">
+            <img src="/img/talgud2020/gal28.png" alt="">
+            <img src="/img/talgud2020/gal29.png" alt="">
+            <img src="/img/talgud2020/gal30.png" alt="">
+            <img src="/img/talgud2020/gal31.png" alt="">
+            <img src="/img/talgud2020/gal32.png" alt="">
+            <img src="/img/talgud2020/gal33.png" alt="">
           </div>
         </div>
         <h1 class="text-white text-xl font-bold">Muratsi sadam 1960-1980</h1>
         <p class="text-white">Pildid: Argo Sepp</p>
         <div class="bg-blue-700 flex flex-col">
-          <div class="slideshow-container pt-4 self-center">
-            <div class="mySlides2"><img src="/img/60-80/img1.png" style="width:100%"></div>
-            <div class="mySlides2"><img src="/img/60-80/img2.png" style="width:100%"></div>
-            <div class="mySlides2"><img src="/img/60-80/img3.png" style="width:100%"></div>
-            <div class="mySlides2"><img src="/img/60-80/img4.png" style="width:100%"></div>
-            <div class="mySlides2"><img src="/img/60-80/img5.png" style="width:100%"></div>
-            <div class="mySlides2"><img src="/img/60-80/img6.png" style="width:100%"></div>
-            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+          <div class="carousel" data-flickity='{ "imagesLoaded": true, "wrapAround": true }'>
+            <img src="/img/60-80/img1.png" alt="">
+            <img src="/img/60-80/img2.png" alt="">
+            <img src="/img/60-80/img3.png" alt="">
+            <img src="/img/60-80/img4.png" alt="">
+            <img src="/img/60-80/img5.png" alt="">
+            <img src="/img/60-80/img6.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </div>
+
 <?php /* FOOTER-------------------------*/?>
     <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-gray-800">
         <div class="container mx-auto mb-8 px-6">
@@ -151,26 +150,14 @@
             </div>
         </div>
     </footer>
-<script>
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-
-function showSlides(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}
-</script>
+    <script>
+      var elem = document.querySelector('.main-carousel');
+      var flkty = new Flickity( elem, {
+        cellAlign: 'left',
+        contain: true
+      });
+      var flkty = new Flickity( '.main-carousel', {
+      });
+    </script>
 </body>
 </html> 
