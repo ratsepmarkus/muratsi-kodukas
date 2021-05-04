@@ -27,7 +27,7 @@
     }
     .carousel img {
       display: block;
-      height: 400px;
+      height: 250px;
       margin-right: 1rem;
     }
 </style>
