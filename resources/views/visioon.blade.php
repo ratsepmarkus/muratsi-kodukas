@@ -121,9 +121,19 @@
               </a>
             </div>
           </div>
+
+          <div class="">
+            <div class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/visioon/img20.png'})" class="cursor-pointer">
+                <img alt="Placeholder" class="h-36" src="/img/visioon/img20.png">
+              </a>
+            </div>
+          </div>
+
           </div>
         </div>
       </div>
+
                 <h1 class="font-bold text-xl">2011 – 2017</h1>
                 <p class="mt-4 mb-4">Muratsi Küla Seltsil olid suured plaanid sadama alaga. Planeeritud olid koostöös arhitektidega ja projekteerijatega sadamale külaseltsimaja erinevate võimalustega, samuti suurendada suplusala, kus kõrval on nii väli korvpalliväljak kui ka võrkpalli mängimiseks liivaväljak. Külarahvas hoidis sadamat hästi!
                 Leiti vahendeid ja tehti ise vajalikud tööd, et lastele oleks mängimiseks liivakast ja kiiged. Samuti korraldati iga kevadel talgud sadamaala korrastamiseks ning nii mõnigi vabaõhu üritus sai suve jooksul peetud. Sadamast oli saanud Muratsi küla inimeste lemmik vabaaja veetmis koht.</p>
