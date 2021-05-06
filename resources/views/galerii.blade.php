@@ -26,10 +26,16 @@
       background: #EEE;
     }
     .carousel img {
-      display: block;
+      display: flex;
       height: 250px;
       margin-right: 1rem;
+      max-width: none;
     }
+
+    .flickity-page-dots{
+        display:none;
+    }
+
 </style>
 </head>
 <body class="bg-blue-900 bg-background bg-no-repeat">
@@ -68,6 +74,29 @@
 
 
   <?php /*MAIN----------------------------------------------------------------------*/?>
+  <?php /*------test------------*/?>
+  <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+        <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
+          <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+            <div @click.away="imgModal = ''" class="flex flex-col overflow-auto">
+              <div class="">
+                <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+                  <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <div class="p-2">
+                <img :alt="imgModalSrc" class="object-contain h-full" :src="imgModalSrc">
+                <p x-text="imgModalDesc" class="text-center text-white"></p>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <?php /*------test------------*/?>
+
   <div class="container mx-auto mb-12 mt-8 px-6 bg-blue-700 rounded-2xl">
     <div class="sm:flex sm:mt-8">
       <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">
@@ -76,51 +105,267 @@
         <p class="text-white ">Pildid: Saarte hääl</p>
         <div class="bg-blue-700 flex flex-col mb-14">
           <div class="carousel" data-flickity='{ "imagesLoaded": true, "wrapAround": true }'>
-            <img src="/img/talgud2020/gal1.png" alt="">
-            <img src="/img/talgud2020/gal2.png" alt="">
-            <img src="/img/talgud2020/gal3.png" alt="">
-            <img src="/img/talgud2020/gal4.png" alt="">
-            <img src="/img/talgud2020/gal5.png" alt="">
-            <img src="/img/talgud2020/gal6.png" alt="">
-            <img src="/img/talgud2020/gal7.png" alt="">
-            <img src="/img/talgud2020/gal8.png" alt="">
-            <img src="/img/talgud2020/gal9.png" alt="">
-            <img src="/img/talgud2020/gal10.png" alt="">
-            <img src="/img/talgud2020/gal11.png" alt="">
-            <img src="/img/talgud2020/gal12.png" alt="">
-            <img src="/img/talgud2020/gal13.png" alt="">
-            <img src="/img/talgud2020/gal14.png" alt="">
-            <img src="/img/talgud2020/gal15.png" alt="">
-            <img src="/img/talgud2020/gal16.png" alt="">
-            <img src="/img/talgud2020/gal17.png" alt="">
-            <img src="/img/talgud2020/gal18.png" alt="">
-            <img src="/img/talgud2020/gal19.png" alt="">
-            <img src="/img/talgud2020/gal20.png" alt="">
-            <img src="/img/talgud2020/gal21.png" alt="">
-            <img src="/img/talgud2020/gal22.png" alt="">
-            <img src="/img/talgud2020/gal23.png" alt="">
-            <img src="/img/talgud2020/gal24.png" alt="">
-            <img src="/img/talgud2020/gal25.png" alt="">
-            <img src="/img/talgud2020/gal26.png" alt="">
-            <img src="/img/talgud2020/gal27.png" alt="">
-            <img src="/img/talgud2020/gal28.png" alt="">
-            <img src="/img/talgud2020/gal29.png" alt="">
-            <img src="/img/talgud2020/gal30.png" alt="">
-            <img src="/img/talgud2020/gal31.png" alt="">
-            <img src="/img/talgud2020/gal32.png" alt="">
-            <img src="/img/talgud2020/gal33.png" alt="">
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal1.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal1.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal2.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal2.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal3.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal3.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal4.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal4.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal5.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal5.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal6.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal6.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal7.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal7.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal8.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal8.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal9.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal9.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal10.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal10.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal11.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal11.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal12.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal12.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal13.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal13.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal14.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal14.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal15.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal15.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal16.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal16.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal17.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal17.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal18.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal18.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal19.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal19.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal20.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal20.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal21.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal21.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal22.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal22.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal23.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal23.png">
+              </a>
+          </div>
+
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal24.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal24.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal25.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal25.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal26.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal26.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal27.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal27.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal28.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal28.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal29.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal29.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal30.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal30.png">
+              </a>
+          </div>
+
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal31.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal31.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal32.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal32.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/talgud2020/gal33.png'})">
+                <img alt="Placeholder" src="/img/talgud2020/gal33.png">
+              </a>
+          </div>
+
           </div>
         </div>
         <h1 class="text-white text-xl font-bold">Muratsi sadam 1960-1980</h1>
         <p class="text-white">Pildid: Argo Sepp</p>
         <div class="bg-blue-700 flex flex-col">
           <div class="carousel" data-flickity='{ "imagesLoaded": true, "wrapAround": true }'>
-            <img src="/img/60-80/img1.png" alt="">
-            <img src="/img/60-80/img2.png" alt="">
-            <img src="/img/60-80/img3.png" alt="">
-            <img src="/img/60-80/img4.png" alt="">
-            <img src="/img/60-80/img5.png" alt="">
-            <img src="/img/60-80/img6.png" alt="">
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/60-80/img1.png'})">
+                <img alt="Placeholder" src="/img/60-80/img1.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/60-80/img2.png'})">
+                <img alt="Placeholder" src="/img/60-80/img2.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/60-80/img3.png'})">
+                <img alt="Placeholder" src="/img/60-80/img3.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/60-80/img4.png'})">
+                <img alt="Placeholder" src="/img/60-80/img4.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/60-80/img5.png'})">
+                <img alt="Placeholder" src="/img/60-80/img5.png">
+              </a>
+          </div>
+
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/60-80/img6.png'})">
+                <img alt="Placeholder" src="/img/60-80/img6.png">
+              </a>
+          </div>
+
           </div>
         </div>
       </div>
@@ -161,4 +406,4 @@
       });
     </script>
 </body>
-</html> 
+</html>
