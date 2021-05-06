@@ -98,7 +98,7 @@
     </div>
   </div>
   <header class="bg-nav-bg bg-no-repeat bg-cover bg-center">
-      <img src="/img/logo.png" alt="logo" class="mb-40 lg:mb-64 h-36 sm:h-44 md:h-52 lg:h-60">
+      <img src="/img/logo1.png" alt="logo" class="mb-40 lg:mb-64 h-36 sm:h-44 md:h-52 lg:h-60">
       <nav class="navigation flex items-center invisible lg:visible">
           <?php /*nav*/?>
           <svg class="svg-wave" width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1920 300H0V0C435.72 154.841 831.391 213.662 1920 247.761V300Z" fill="#1D4ED8"/></svg>
@@ -115,7 +115,7 @@
         <?php /*WEATHER DATA*/?>
           <div class="flex text-center text-xs lg:text-base font-bold justify-end mr-4 md:mr-12 visible items-center pb-20">
               <div class="bg-black bg-opacity-50 p-2">
-                  <h1 class="text-white">Üldine</h1>
+                  <h1 class="text-white">Taevas</h1>
                   <p  class="text-yellow-400" id="desc"></p>
               </div>
               <div class="bg-black bg-opacity-50 p-2 mx-4 h-full">
