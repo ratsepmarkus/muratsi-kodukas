@@ -53,12 +53,11 @@
   .sidebar {
   position: fixed;
   z-index: 1;
-  top: 75%;
+  top: 61%;
   overflow-x: hidden;
   }
   .badge{
     height: 10rem;
-    opacity: 90%;
   }
   </style>
 </head>
@@ -66,7 +65,7 @@
 <body class="bg-blue-900 bg-background overflow-x-hidden">
   <?php /*------IMG what moves------------*/?>
   <div class="sidebar invisible md:visible">
-    <a href="/taname"><img src="/img/badge.png" class="badge"></a>
+    <a href="/taname"><img src="/img/vapp1.png" class="badge"></a>
   </div>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <div class="w-full text-white bg-blue-600 dark-mode:text-gray-200 dark-mode:bg-gray-800 border-b-2 visible lg:hidden">
