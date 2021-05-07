@@ -53,11 +53,11 @@
   .sidebar {
   position: fixed;
   z-index: 1;
-  top: 61%;
+  top: 67%;
   overflow-x: hidden;
   }
   .badge{
-    height: 10rem;
+    height: 20rem;
   }
   </style>
 </head>

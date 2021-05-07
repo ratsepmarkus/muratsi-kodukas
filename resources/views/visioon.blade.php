@@ -12,19 +12,18 @@
         .sidebar {
         position: fixed;
         z-index: 1;
-        top: 75%;
+        top: 67%;
         overflow-x: hidden;
         }
-        .badge{
-          height: 10rem;
-          opacity: 90%;
-        }
+   .badge{
+    height: 20rem;
+  }
     </style>
 </head>
 <body class="bg-primary bg-background">
     <?php /*------IMG what moves------------*/?>
     <div class="sidebar invisible md:visible">
-    <a href="/taname"><img src="/img/badge.png" class="badge"></a>
+        <a href="/taname"><img src="/img/vapp1.png" class="badge"></a>
     </div>
     <?php /* NAV--------------------------------- */ ?>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
