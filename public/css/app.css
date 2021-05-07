@@ -4942,6 +4942,10 @@ select {
   background-image: url('/img/nav-bg.png');
 }
 
+.bg-nav-bg1 {
+  background-image: url('/img/header-bg.png');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -36799,6 +36803,10 @@ select {
     background-image: url('/img/nav-bg.png');
   }
 
+  .sm\:bg-nav-bg1 {
+    background-image: url('/img/header-bg.png');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -68484,6 +68492,10 @@ select {
 
   .md\:bg-nav-bg {
     background-image: url('/img/nav-bg.png');
+  }
+
+  .md\:bg-nav-bg1 {
+    background-image: url('/img/header-bg.png');
   }
 
   .md\:from-transparent {
@@ -100173,6 +100185,10 @@ select {
     background-image: url('/img/nav-bg.png');
   }
 
+  .lg\:bg-nav-bg1 {
+    background-image: url('/img/header-bg.png');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -131860,6 +131876,10 @@ select {
     background-image: url('/img/nav-bg.png');
   }
 
+  .xl\:bg-nav-bg1 {
+    background-image: url('/img/header-bg.png');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -163545,6 +163565,10 @@ select {
 
   .\32xl\:bg-nav-bg {
     background-image: url('/img/nav-bg.png');
+  }
+
+  .\32xl\:bg-nav-bg1 {
+    background-image: url('/img/header-bg.png');
   }
 
   .\32xl\:from-transparent {
