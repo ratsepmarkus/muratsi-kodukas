@@ -18,7 +18,6 @@
   .badge{
     height: 16rem;
   }
-
   *
     body { font-family: sans-serif; }
     html { overflow-y: scroll; }
@@ -31,11 +30,9 @@
       margin-right: 1rem;
       max-width: none;
     }
-
     .flickity-page-dots{
         display:none;
     }
-
 </style>
 </head>
 <body class="bg-primary bg-background bg-no-repeat">
