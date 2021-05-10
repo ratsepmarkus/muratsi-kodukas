@@ -83,8 +83,8 @@
         </button>
       </div>
       <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
-        <a class="px-4 py-2 mt-2 text-sm text-white" href="/">AVALEHT</a>
-        <a class="px-4 py-2 mt-2 text-sm text-yellow-400" href="/kontakt">KONTAKT</a>
+        <a class="px-4 py-2 mt-2 text-sm text-yellow-400" href="/">AVALEHT</a>
+        <a class="px-4 py-2 mt-2 text-sm text-white" href="/kontakt">KONTAKT</a>
         <a class="px-4 py-2 mt-2 text-sm text-white" href="/tasud">TASUD</a>
         <a class="px-4 py-2 mt-2 text-sm text-white" href="/eeskirjad">EESKIRJAD</a>
         <a class="px-4 py-2 mt-2 text-sm text-white" href="/uritused">ÜRITUSED</a>
