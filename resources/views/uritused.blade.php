@@ -20,7 +20,7 @@
   }
     </style>
 </head>
-<body class="bg-blue-900 bg-background">
+<body class="bg-primary bg-background">
     <?php /*------IMG what moves------------*/?>
     <div class="sidebar invisible md:visible">
         <a href="/taname"><img src="/img/vapp1.png" class="badge"></a>
