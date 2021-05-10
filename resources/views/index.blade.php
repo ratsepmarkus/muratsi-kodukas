@@ -96,7 +96,7 @@
     </div>
   </div>
   <header class="bg-nav-bg bg-no-repeat bg-cover bg-center">
-      <img src="/img/logo.png" alt="logo" class="mb-40 lg:mb-64 h-36 sm:h-44 md:h-52 lg:h-60">
+      <img src="/img/logo1.png" alt="logo" class="mb-40 lg:mb-64 h-36 sm:h-44 md:h-52 lg:h-60">
       <nav class="navigation flex items-center invisible lg:visible">
           <?php /*nav*/?>
           <svg class="svg-wave" width="1920" height="300" viewBox="0 0 1920 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
