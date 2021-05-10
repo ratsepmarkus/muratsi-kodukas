@@ -41,14 +41,14 @@
     left: calc((var(--l) / 17.5) * 100%);
     font-size: 1vw;
   }
-  .navigation ul li:nth-child(1) { --t: 0.3; --l: 0.5; }
-  .navigation ul li:nth-child(2) { --t: 0.6; --l: 1.7; }
-  .navigation ul li:nth-child(3) { --t: 0.9; --l: 3; }
-  .navigation ul li:nth-child(4) { --t: 1.2; --l: 4.4;}
-  .navigation ul li:nth-child(5) { --t: 1.4; --l: 6.1;}
-  .navigation ul li:nth-child(6) { --t: 1.6; --l: 7.6;}
-  .navigation ul li:nth-child(7) { --t: 1.7; --l: 9; }
-  .navigation ul li:nth-child(8) { --t: 1.8; --l: 10.5;}
+  .navigation ul li:nth-child(1) { --t: 0.4; --l: 1.3; }
+  .navigation ul li:nth-child(2) { --t: 0.9; --l: 3.1; }
+  .navigation ul li:nth-child(3) { --t: 1.2; --l: 5.1; }
+  .navigation ul li:nth-child(4) { --t: 1.5; --l: 7.2;}
+  .navigation ul li:nth-child(5) { --t: 1.7; --l: 9.79;}
+  .navigation ul li:nth-child(6) { --t: 1.8; --l: 12.6;}
+  .navigation ul li:nth-child(7) { --t: 1.9; --l: 15; }
+  .navigation ul li:nth-child(8) { --t: 1.9; --l: 17;}
 
   .sidebar {
   position: fixed;
@@ -57,7 +57,7 @@
   overflow-x: hidden;
   }
   .badge{
-    height: 20rem;
+    height: 18rem;
   }
   </style>
 </head>

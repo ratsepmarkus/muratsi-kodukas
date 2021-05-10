@@ -16,7 +16,7 @@
         overflow-x: hidden;
         }
   .badge{
-    height: 20rem;
+    height: 17rem;
   }
     </style>
 </head>
