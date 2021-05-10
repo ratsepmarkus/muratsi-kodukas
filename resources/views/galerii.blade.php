@@ -74,7 +74,7 @@
   <?php /*------test------------*/?>
   <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
         <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
-          <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+          <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed h-200 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
             <div @click.away="imgModal = ''" class="flex flex-col overflow-auto">
               <div class="">
                 <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
