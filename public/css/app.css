@@ -11392,6 +11392,26 @@ select {
   border-style: none;
 }
 
+.hover\:border-solid:hover {
+  border-style: solid;
+}
+
+.hover\:border-dashed:hover {
+  border-style: dashed;
+}
+
+.hover\:border-dotted:hover {
+  border-style: dotted;
+}
+
+.hover\:border-double:hover {
+  border-style: double;
+}
+
+.hover\:border-none:hover {
+  border-style: none;
+}
+
 .border-0 {
   border-width: 0px;
 }
@@ -43502,6 +43522,26 @@ select {
     border-style: none;
   }
 
+  .sm\:hover\:border-solid:hover {
+    border-style: solid;
+  }
+
+  .sm\:hover\:border-dashed:hover {
+    border-style: dashed;
+  }
+
+  .sm\:hover\:border-dotted:hover {
+    border-style: dotted;
+  }
+
+  .sm\:hover\:border-double:hover {
+    border-style: double;
+  }
+
+  .sm\:hover\:border-none:hover {
+    border-style: none;
+  }
+
   .sm\:border-0 {
     border-width: 0px;
   }
@@ -75439,6 +75479,26 @@ select {
   }
 
   .md\:border-none {
+    border-style: none;
+  }
+
+  .md\:hover\:border-solid:hover {
+    border-style: solid;
+  }
+
+  .md\:hover\:border-dashed:hover {
+    border-style: dashed;
+  }
+
+  .md\:hover\:border-dotted:hover {
+    border-style: dotted;
+  }
+
+  .md\:hover\:border-double:hover {
+    border-style: double;
+  }
+
+  .md\:hover\:border-none:hover {
     border-style: none;
   }
 
@@ -107382,6 +107442,26 @@ select {
     border-style: none;
   }
 
+  .lg\:hover\:border-solid:hover {
+    border-style: solid;
+  }
+
+  .lg\:hover\:border-dashed:hover {
+    border-style: dashed;
+  }
+
+  .lg\:hover\:border-dotted:hover {
+    border-style: dotted;
+  }
+
+  .lg\:hover\:border-double:hover {
+    border-style: double;
+  }
+
+  .lg\:hover\:border-none:hover {
+    border-style: none;
+  }
+
   .lg\:border-0 {
     border-width: 0px;
   }
@@ -139322,6 +139402,26 @@ select {
     border-style: none;
   }
 
+  .xl\:hover\:border-solid:hover {
+    border-style: solid;
+  }
+
+  .xl\:hover\:border-dashed:hover {
+    border-style: dashed;
+  }
+
+  .xl\:hover\:border-dotted:hover {
+    border-style: dotted;
+  }
+
+  .xl\:hover\:border-double:hover {
+    border-style: double;
+  }
+
+  .xl\:hover\:border-none:hover {
+    border-style: none;
+  }
+
   .xl\:border-0 {
     border-width: 0px;
   }
@@ -171259,6 +171359,26 @@ select {
   }
 
   .\32xl\:border-none {
+    border-style: none;
+  }
+
+  .\32xl\:hover\:border-solid:hover {
+    border-style: solid;
+  }
+
+  .\32xl\:hover\:border-dashed:hover {
+    border-style: dashed;
+  }
+
+  .\32xl\:hover\:border-dotted:hover {
+    border-style: dotted;
+  }
+
+  .\32xl\:hover\:border-double:hover {
+    border-style: double;
+  }
+
+  .\32xl\:hover\:border-none:hover {
     border-style: none;
   }
 

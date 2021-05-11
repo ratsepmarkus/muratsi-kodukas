@@ -84,7 +84,7 @@
       </div>
       <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
         <a class="px-4 py-2 mt-2 text-sm text-yellow-400" href="/">AVALEHT</a>
-        <a class="px-4 py-2 mt-2 text-sm text-white" href="/kontakt">KONTAKT</a>
+        <a class="px-4 py-2 mt-2 text-sm text-white " href="/kontakt">KONTAKT</a>
         <a class="px-4 py-2 mt-2 text-sm text-white" href="/tasud">TASUD</a>
         <a class="px-4 py-2 mt-2 text-sm text-white" href="/eeskirjad">EESKIRJAD</a>
         <a class="px-4 py-2 mt-2 text-sm text-white" href="/uritused">ÜRITUSED</a>
@@ -129,14 +129,14 @@
 </svg>
 
           <ul>
-            <li><a class="px-2 py-2 mt-2 text-md text-yellow-400" href="/">AVALEHT</a></li>
-            <li><a class="px-2 py-2 mt-2 text-md text-white" href="/kontakt">KONTAKT</a></li>
-            <li><a class="px-2 py-2 mt-2 text-md text-white" href="/tasud">TASUD</a></li>
-            <li><a class="px-2 py-2 mt-2 text-md text-white" href="/eeskirjad">EESKIRJAD</a></li>
-            <li><a class="px-2 py-2 mt-2 text-md text-white" href="/uritused">ÜRITUSED</a></li>
-            <li><a class="px-2 py-2 mt-2 text-md text-white" href="/visioon">VISIOON</a></li>
-            <li><a class="px-2 py-2 mt-2 text-md text-white" href="/galerii">GALERII</a></li>
-            <li><a class="px-2 py-2 mt-2 text-md text-white" href="/taname">TÄNAME</a></li>
+            <li><a class="px-2 py-2 mt-2 text-md text-yellow-400 " href="/">AVALEHT</a></li>
+            <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/kontakt">KONTAKT</a></li>
+            <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/tasud">TASUD</a></li>
+            <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/eeskirjad">EESKIRJAD</a></li>
+            <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/uritused">ÜRITUSED</a></li>
+            <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/visioon">VISIOON</a></li>
+            <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/galerii">GALERII</a></li>
+            <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/taname">TÄNAME</a></li>
           </ul>
         <?php /*WEATHER DATA*/?>
           <div class="flex text-center text-xs lg:text-base font-bold justify-end mr-4 md:mr-12 visible items-center pb-20">
@@ -165,7 +165,7 @@
         <h1 class="font-bold text-yellow-400 text-4xl mb-8">TEATED</h1>
         <div>
           <div class="flex mb-4 justify-between">
-            <p href="#" class="font-bold text-lg sm:text-xl">Muratsi sadamas alustati ujuvkai paigaldust</p>
+            <p href="#" class=" text-lg underline sm:text-xl">Muratsi sadamas alustati ujuvkai paigaldust</p>
             <p class="text-yellow-400">20.04.2021</p>
           </div>
           <div class="flex flex-col sm:flex-row items-start">
@@ -178,7 +178,7 @@
 
         <div class="border-t-2 border-b-2 border-gray-800 py-8 my-8">
           <div class="flex mb-4 justify-between">
-            <p href="#" class="font-bold text-lg sm:text-xl">Kena Tegu 2020 nominent</p>
+            <p href="#" class="font-bold text-lg underline sm:text-xl">Kena Tegu 2020 nominent</p>
             <p class="text-yellow-400">20.04.2021</p>
           </div>
           <div class="flex flex-col sm:flex-row items-start">
@@ -189,7 +189,7 @@
         </div>
 
         <div class="flex mb-4 justify-between">
-          <p href="#" class="font-bold text-lg sm:text-xl">Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi</p>
+          <p href="#" class="font-bold text-lg underline sm:text-xl">Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi</p>
           <p class="text-yellow-400">20.04.2021</p>
         </div>
         <div class="flex flex-col sm:flex-row items-start">
@@ -201,7 +201,7 @@
 
     <div class="flex lg:flex-col justify-between lg:ml-16 xl:ml-32 mt-12 lg:mt-0">
       <div class="lg:mb-40 w-100 h-72 p-4 bg-blue-700 rounded-2xl text-center align-middle flex flex-col justify-center shadow-xl">
-        <a href="" class="font-bold text-xl hover:text-yellow-400"><u>SADAMA OTSEPILT</u></a>
+        <a href="" class="font-bold text-xl  hover:text-yellow-400"><u>SADAMA OTSEPILT</u></a>
         <p>Klõpsa lingile, et näha sadama kaamerast otsepilti</p>
       </div>
 

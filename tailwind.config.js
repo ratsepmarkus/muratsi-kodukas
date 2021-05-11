@@ -11,7 +11,7 @@ module.exports = {
         extend: {
             spacing: {
                 '100': '32rem',
-              },
+            },
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
@@ -31,6 +31,9 @@ module.exports = {
         extend: {
             opacity: ['disabled'],
             backgroundColor: ['active'],
+            borderOpacity: ['hover'],
+            borderColor: ['hover'],
+            borderStyle: ['hover'],
         },
     },
 
