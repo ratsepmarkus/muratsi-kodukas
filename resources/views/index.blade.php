@@ -140,12 +140,8 @@
           </ul>
         <?php /*WEATHER DATA*/?>
           <div class="flex text-center text-xs lg:text-base font-bold justify-end mr-4 md:mr-12 visible items-center pb-20">
-              <div class="bg-black bg-opacity-50 p-2">
-                  <h1 class="text-white">Taevas</h1>
-                  <p  class="text-yellow-400" id="desc"></p>
-              </div>
               <div class="bg-black bg-opacity-50 p-2 mx-4 h-full">
-                  <h1 class="text-white">Temp.</h1>
+                  <h1 class="text-white">Temperatuur</h1>
                   <p class="text-yellow-400" id="temp"></p>
               </div>
               <div class="bg-black bg-opacity-50 p-2">
