@@ -128,6 +128,29 @@
 </defs>
 </svg>
 
+<?php /*------test------------*/?>
+  <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+        <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
+          <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed h-200 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+            <div @click.away="imgModal = ''" class="flex flex-col overflow-auto">
+              <div class="">
+                <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+                  <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <div class="p-2">
+                <img :alt="imgModalSrc" class="object-contain h-full" :src="imgModalSrc">
+                <p x-text="imgModalDesc" class="text-center text-white"></p>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <?php /*------test------------*/?>
+
           <ul>
             <li><a class="px-2 py-2 mt-2 text-md text-yellow-400 " href="/">AVALEHT</a></li>
             <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/kontakt">KONTAKT</a></li>
@@ -168,7 +191,11 @@
             <p class="text-sm sm:text-base">Jaanuari algul alustati kaevetöödega Muratsi sadama akvatooriumis, kus väljakaevatava osa asemel tuleb ujuvkai, mis annab sadamale juurde 16 paadi kohta.
               Projekti ''Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala-ja mereturisimi arendamine'' jaoks saadi rahastus läbi Saarte Kalanduse EMKF kalanduspiirkonna kohaliku arengu strateegia 3.3 kaudu.
             </p>
-            <img src="/img/posts/postitus1.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
+            <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/posts/postitus1.png'})">
+                <img class="h-full w-full" alt="Placeholder" src="/img/posts/postitus1.png">
+              </a>
+          </div>
           </div>
         </div>
 
@@ -180,7 +207,11 @@
           <div class="flex flex-col sm:flex-row items-start">
             <p class="text-sm sm:text-base">Saaremaa Arenduskeskuse poolt korraldatud tunnustusüritusel saime märgitud kui Kena Tegu 2020 nominent. Tunnustus saadi uute tegevustega sadamaalal, kui kogukonna kaasabil korrastati haljastus ning suplusala.
             </p>
-            <img src="/img/posts/postitus2.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
+            <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/posts/postitus2.png'})">
+                <img class="h-full w-full" alt="Placeholder" src="/img/posts/postitus2.png">
+              </a>
+          </div>
           </div>
         </div>
 
@@ -190,11 +221,15 @@
         </div>
         <div class="flex flex-col sm:flex-row items-start">
           <p class="text-sm sm:text-base">MTÜ-de Muratsi Kalur ja Muratsi Küla Selts korraldatud talgutele kogunes laupäeva hommikul veerandsada külaelanikku.  Suur osa tööst sai tehtud masinate abil: killustik ja muld laiali laotatud ning maapind enam-vähem tasaseks silutud.</p>
-          <img src="/img/posts/postitus3.png" class="h-32 sm:ml-4 pt-4 sm:pt-0">
+          <div  x-data="{}" class="">
+              <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/posts/postitus3.png'})">
+                <img class="h-full w-full sm:ml-4 pt-4 sm:pt-0" alt="Placeholder" src="/img/posts/postitus3.png">
+              </a>
+          </div>
         </div>
       </div>
     </div>
-
+    h-32 sm:ml-4 pt-4 sm:pt-0
     <div class="flex lg:flex-col justify-between lg:ml-16 xl:ml-32 mt-12 lg:mt-0">
       <div class="lg:mb-40 w-100 h-72 p-4 bg-blue-700 rounded-2xl text-center align-middle flex flex-col justify-center shadow-xl">
         <a href="" class="font-bold text-xl  hover:text-yellow-400"><u>SADAMA OTSEPILT</u></a>
