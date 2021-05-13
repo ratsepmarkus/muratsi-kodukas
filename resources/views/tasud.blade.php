@@ -60,31 +60,31 @@
             <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">
                 <h1 class="sm:text-3xl text-center font-bold text-yellow-400 text-2xl mb-8">Muratsi sadamaala hinnakiri 2021</h1>
                 <div class="grid grid-rows-3 grid-cols-4 grid-flow-col gap-4 text-xs md:text-base text-center">
-                    <div class="font-bold text-left">Sadama tasud külalistele</div>
-                    <div class="text-left">Kaikoha kasutus alusele kuni 6 meetrit</div>
+                    <div class="font-medium text-left">Sadama tasud külalistele</div>
+                    <div class="text-left ">Kaikoha kasutus alusele kuni 6 meetrit</div>
                     <div class="text-left">Kaikoha kasutus alusele 6 - 8 meetrit</div>
-                    <div class="font-bold">Hooaeg</div>
+                    <div class="font-medium">Hooaeg</div>
                     <div>80€</div>
                     <div>100€</div>
-                    <div class="font-bold">Kuu</div>
+                    <div class="font-medium">Kuu</div>
                     <div>25€</div>
                     <div>50€</div>
-                    <div class="font-bold">Ööpäev</div>
+                    <div class="font-medium">Ööpäev</div>
                     <div>5€</div>
                     <div>5€</div>
                 </div>
                 <hr class="my-8">
                 <div class="grid grid-rows-3 grid-cols-4 grid-flow-col gap-4 text-xs md:text-base text-center">
-                    <div class="font-bold text-left">Sadama tasud Muratsi küla elanikele</div>
+                    <div class="font-medium text-left">Sadama tasud Muratsi küla elanikele</div>
                     <div class="text-left">Kaikoha kasutus kuni 6 meetrit</div>
                     <div class="text-left">Kaikoha kasutus kuni 6-8 meetrit</div>
-                    <div class="font-bold">Hooaeg</div>
+                    <div class="font-medium">Hooaeg</div>
                     <div>75€</div>
                     <div>80€</div>
-                    <div class="font-bold">Kuu</div>
+                    <div class="font-medium">Kuu</div>
                     <div>15€</div>
                     <div>40€</div>
-                    <div class="font-bold">Ööpäev</div>
+                    <div class="font-semibold">Ööpäev</div>
                     <div>5€</div>
                     <div>5€</div>
                 </div>

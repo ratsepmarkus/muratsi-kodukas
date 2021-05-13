@@ -60,18 +60,21 @@
         <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">
                 <h1 class="sm:text-3xl font-bold text-yellow-400 text-2xl mb-8">ME TÄNAME</h1>
-                <h1 class="border-0 border-black-1000 mt-8 text-xl font-bold">Saarte Kalandus</h1>
-                <p class=" border-0 border-black-1000 mb-4">Meeldiva koostöö eest ning suhtlemisel erinevate projektide koostamisel Euroopa Merendus- ja Kalandusfondist.</p>
-                <p>EMKF raknduskava 2014-2020 Toetatud projektid</p>
+                <h1 class="border-0 border-black-1000 mt-8 text-xl  font-medium">Saarte Kalandus</h1>
+                <p class=" border-0 border-black-1000 font-extralight mb-4">Meeldiva koostöö eest ning suhtlemisel erinevate projektide koostamisel Euroopa Merendus- ja Kalandusfondist.</p>
+                <p>EMKF rakenduskava 2014-2020 toetatud projektid</p>
                 <p>• 2020 - Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala- ja mereturismi arendamine</p>
                 <p>• 2019 - Muratsi sadama mänguväljaku- ja tervisekompleksi rajamine</p>
                 <p>• 2017 - Muratsi sadama rekonstrueerimine</p>
-                <h1 class="border-0 border-black-1000 mt-8 text-xl font-bold">Saaremaa vald</h1>
+                <h1 class="border-0 border-black-1000 mt-8 text-xl font-medium">Saaremaa vald</h1>
                 <p class=" border-0 border-black-1000 mb-4">Suurepärase koostöö eest! Saaremaa vald on aidanud erinevate projektide omaosaluse rahastamisel ning pakub igakülgset abi sadama haldamisel.</p>
-                <h1 class="border-0 border-black-1000 mt-8 text-xl font-bold">MTÜ Võimalus</h1>
+                <h1 class="border-0 border-black-1000 mt-8 text-xl font-medium">MTÜ Võimalus</h1>
                 <p class=" border-0 border-black-1000 mb-4">Sügisvooru 2020 projekti rahastusest on tehtud sadamale uus koduleht, rajatud elektrisüsteemid valgustuse ja turvakaamerate jaoks.</p>
-                <h1 class="border-0 border-black-1000 mt-8 text-xl font-bold">Muratsi küla inimesed</h1>
-                <p class=" border-0 border-black-1000 mb-12">2020 aastal valminud laste mänguväljak ning tervisekompleksi omaosaluse rahastusele andis panuse Helle Liigsoo, Aivo Jürisson, Raul Pors, Eilika Trummar, Marje Kruusmägi, Aare Kruusmägi, Viljo Veesaar, Anu Ots, Mari Rauna, Helen Kombe, Kadi Hiie, Margo Jäe, Jaanus Heina, Elvis Reinmägi, Taavi Sevastjanov, Andro Ots ja Andres Kirst!</p>
+                <h1 class="border-0 border-black-1000 mt-8 text-xl font-medium">Muratsi küla inimesed</h1>
+                <p class=" border-0 border-black-1000 mb-4">2020 aastal valminud laste mänguväljak ning tervisekompleksi omaosaluse rahastusele andis panuse Helle Liigsoo, Aivo Jürisson, Raul Pors, Eilika Trummar, Marje Kruusmägi, Aare Kruusmägi, Viljo Veesaar, Anu Ots, Mari Rauna, Helen Kombe, Kadi Hiie, Margo Jäe, Jaanus Heina, Elvis Reinmägi, Taavi Sevastjanov, Andro Ots ja Andres Kirst!</p>
+                <h1 class="border-0 border-black-1000 mt-8 text-xl font-medium">Kuressaare Soojus AS</h1>
+                <p class=" border-0 border-black-1000 mb-4">Suur tänu meeldiva koostöö eest, mille tulemusel saime mänguväljakutele ja terviselinnakule juurde hakkepuitu!</p>
+
                 <div class="flex flex-wrap justify-evenly pb-4">
                     <img src="/img/taname/kalandus.png" alt="" class="h-28 self-center">
                     <img src="/img/taname/vald.png" alt="" class="h-24 self-center">

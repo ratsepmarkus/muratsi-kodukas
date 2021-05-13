@@ -174,7 +174,7 @@
 
         <div class="border-t-2 border-b-2 border-gray-800 py-8 my-8">
           <div class="flex mb-4 justify-between">
-            <p href="#" class="font-bold text-lg underline sm:text-xl">Kena Tegu 2020 nominent</p>
+            <p href="#" class=" text-lg underline sm:text-xl">Kena Tegu 2020 nominent</p>
             <p class="text-yellow-400">20.04.2021</p>
           </div>
           <div class="flex flex-col sm:flex-row items-start">
@@ -185,7 +185,7 @@
         </div>
 
         <div class="flex mb-4 justify-between">
-          <p href="#" class="font-bold text-lg underline sm:text-xl">Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi</p>
+          <p href="#" class=" text-lg underline sm:text-xl">Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi</p>
           <p class="text-yellow-400">20.04.2021</p>
         </div>
         <div class="flex flex-col sm:flex-row items-start">
