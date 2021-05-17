@@ -229,7 +229,6 @@
         </div>
       </div>
     </div>
-    h-32 sm:ml-4 pt-4 sm:pt-0
     <div class="flex lg:flex-col justify-between lg:ml-16 xl:ml-32 mt-12 lg:mt-0">
       <div class="lg:mb-40 w-100 h-72 p-4 bg-blue-700 rounded-2xl text-center align-middle flex flex-col justify-center shadow-xl">
         <a href="" class="font-bold text-xl  hover:text-yellow-400"><u>SADAMA OTSEPILT</u></a>
