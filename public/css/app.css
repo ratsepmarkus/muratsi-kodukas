@@ -750,6 +750,8 @@ select {
 
 .container {
   width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 @media (min-width: 640px) {
@@ -2749,7 +2751,7 @@ select {
 
 .bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+  background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
 }
 
 .bg-danger {
@@ -3182,7 +3184,7 @@ select {
 
 .group:hover .group-hover\:bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+  background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:bg-danger {
@@ -3615,7 +3617,7 @@ select {
 
 .focus-within\:bg-secondary:focus-within {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+  background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
 }
 
 .focus-within\:bg-danger:focus-within {
@@ -4048,7 +4050,7 @@ select {
 
 .hover\:bg-secondary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+  background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
 }
 
 .hover\:bg-danger:hover {
@@ -4481,7 +4483,7 @@ select {
 
 .focus\:bg-secondary:focus {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+  background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
 }
 
 .focus\:bg-danger:focus {
@@ -4914,7 +4916,7 @@ select {
 
 .active\:bg-secondary:active {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+  background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
 }
 
 .active\:bg-danger:active {
@@ -32877,9 +32879,22 @@ select {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+.sidebar {
+  position: fixed;
+  z-index: 1;
+  top: 30%;
+  overflow-x: hidden;
+}
+
+.badge {
+  height: 16rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   @media (min-width: 640px) {
@@ -34879,7 +34894,7 @@ select {
 
   .sm\:bg-secondary {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .sm\:bg-danger {
@@ -35312,7 +35327,7 @@ select {
 
   .group:hover .sm\:group-hover\:bg-secondary {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .group:hover .sm\:group-hover\:bg-danger {
@@ -35745,7 +35760,7 @@ select {
 
   .sm\:focus-within\:bg-secondary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .sm\:focus-within\:bg-danger:focus-within {
@@ -36178,7 +36193,7 @@ select {
 
   .sm\:hover\:bg-secondary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .sm\:hover\:bg-danger:hover {
@@ -36611,7 +36626,7 @@ select {
 
   .sm\:focus\:bg-secondary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .sm\:focus\:bg-danger:focus {
@@ -37044,7 +37059,7 @@ select {
 
   .sm\:active\:bg-secondary:active {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .sm\:active\:bg-danger:active {
@@ -64840,6 +64855,8 @@ select {
 @media (min-width: 768px) {
   .md\:container {
     width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   @media (min-width: 640px) {
@@ -66839,7 +66856,7 @@ select {
 
   .md\:bg-secondary {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .md\:bg-danger {
@@ -67272,7 +67289,7 @@ select {
 
   .group:hover .md\:group-hover\:bg-secondary {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .group:hover .md\:group-hover\:bg-danger {
@@ -67705,7 +67722,7 @@ select {
 
   .md\:focus-within\:bg-secondary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .md\:focus-within\:bg-danger:focus-within {
@@ -68138,7 +68155,7 @@ select {
 
   .md\:hover\:bg-secondary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .md\:hover\:bg-danger:hover {
@@ -68571,7 +68588,7 @@ select {
 
   .md\:focus\:bg-secondary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .md\:focus\:bg-danger:focus {
@@ -69004,7 +69021,7 @@ select {
 
   .md\:active\:bg-secondary:active {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .md\:active\:bg-danger:active {
@@ -96800,6 +96817,8 @@ select {
 @media (min-width: 1024px) {
   .lg\:container {
     width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   @media (min-width: 640px) {
@@ -98799,7 +98818,7 @@ select {
 
   .lg\:bg-secondary {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .lg\:bg-danger {
@@ -99232,7 +99251,7 @@ select {
 
   .group:hover .lg\:group-hover\:bg-secondary {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .group:hover .lg\:group-hover\:bg-danger {
@@ -99665,7 +99684,7 @@ select {
 
   .lg\:focus-within\:bg-secondary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .lg\:focus-within\:bg-danger:focus-within {
@@ -100098,7 +100117,7 @@ select {
 
   .lg\:hover\:bg-secondary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .lg\:hover\:bg-danger:hover {
@@ -100531,7 +100550,7 @@ select {
 
   .lg\:focus\:bg-secondary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .lg\:focus\:bg-danger:focus {
@@ -100964,7 +100983,7 @@ select {
 
   .lg\:active\:bg-secondary:active {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .lg\:active\:bg-danger:active {
@@ -128760,6 +128779,8 @@ select {
 @media (min-width: 1280px) {
   .xl\:container {
     width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   @media (min-width: 640px) {
@@ -130759,7 +130780,7 @@ select {
 
   .xl\:bg-secondary {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .xl\:bg-danger {
@@ -131192,7 +131213,7 @@ select {
 
   .group:hover .xl\:group-hover\:bg-secondary {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .group:hover .xl\:group-hover\:bg-danger {
@@ -131625,7 +131646,7 @@ select {
 
   .xl\:focus-within\:bg-secondary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .xl\:focus-within\:bg-danger:focus-within {
@@ -132058,7 +132079,7 @@ select {
 
   .xl\:hover\:bg-secondary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .xl\:hover\:bg-danger:hover {
@@ -132491,7 +132512,7 @@ select {
 
   .xl\:focus\:bg-secondary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .xl\:focus\:bg-danger:focus {
@@ -132924,7 +132945,7 @@ select {
 
   .xl\:active\:bg-secondary:active {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .xl\:active\:bg-danger:active {
@@ -160720,6 +160741,8 @@ select {
 @media (min-width: 1536px) {
   .\32xl\:container {
     width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   @media (min-width: 640px) {
@@ -162719,7 +162742,7 @@ select {
 
   .\32xl\:bg-secondary {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .\32xl\:bg-danger {
@@ -163152,7 +163175,7 @@ select {
 
   .group:hover .\32xl\:group-hover\:bg-secondary {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:bg-danger {
@@ -163585,7 +163608,7 @@ select {
 
   .\32xl\:focus-within\:bg-secondary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus-within\:bg-danger:focus-within {
@@ -164018,7 +164041,7 @@ select {
 
   .\32xl\:hover\:bg-secondary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .\32xl\:hover\:bg-danger:hover {
@@ -164451,7 +164474,7 @@ select {
 
   .\32xl\:focus\:bg-secondary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus\:bg-danger:focus {
@@ -164884,7 +164907,7 @@ select {
 
   .\32xl\:active\:bg-secondary:active {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 237, 74, var(--tw-bg-opacity));
+    background-color: rgba(3, 88, 173, var(--tw-bg-opacity));
   }
 
   .\32xl\:active\:bg-danger:active {

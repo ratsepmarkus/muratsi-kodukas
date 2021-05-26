@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sidebar {
+    position: fixed;
+    z-index: 1;
+    top: 30%;
+    overflow-x: hidden;
+}
+
+.badge {
+    height: 16rem;
+}

@@ -8,6 +8,9 @@ module.exports = {
     ],
 
     theme: {
+        container: {
+            padding: '2rem',
+        },
         extend: {
             spacing: {
                 '100': '32rem',
@@ -21,7 +24,7 @@ module.exports = {
             }),
             backgroundColor: theme => ({
                 'primary': '#022A52',
-                'secondary': '#ffed4a',
+                'secondary': '#0358AD',
                 'danger': '#e3342f',
             })
         },
