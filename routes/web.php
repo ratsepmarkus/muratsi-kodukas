@@ -37,4 +37,20 @@ Route::get('/gal', function () {
     return view('gal');
 });
 
+Route::get('/uudised', function () {
+    return view('uudised');
+});
+
+Route::get('/muratsi-sadas-alustati-ujuvkai-paigaldus', function () {
+    return view('muratsi-sadas-alustati-ujuvkai-paigaldus');
+});
+
+Route::get('/kena-tegu', function () {
+    return view('kena-tegu');
+});
+
+Route::get('/muratsi-sadam-sai', function () {
+    return view('muratsi-sadam-sai');
+});
+
 Route::get('/dashboard/blog', function(){})->middleware('auth')->name('blog');
