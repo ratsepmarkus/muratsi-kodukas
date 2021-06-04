@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <title>Eeskirjad</title>
+    <title></title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -40,7 +40,7 @@
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/">AVALEHT</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/kontakt">KONTAKT</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/tasud">TASUD</a>
-                <a class="px-4 py-2 mt-2 text-sm text-yellow-400 " href="/eeskirjad">EESKIRJAD</a>
+                <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none " href="/eeskirjad">EESKIRJAD</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/uritused">ÜRITUSED</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/visioon">VISIOON</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/galerii">GALERII</a>
@@ -52,40 +52,54 @@
     </div>
 
     <?php /* MAIN--------------------------------------*/ ?>
-    <div class="container md:px-32 mx-auto mb-8 mt-8 px-6 ">
-        <div class="sm:flex px-4 sm:mt-8 bg-blue-700 rounded-2xl">
-            <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 text-white flex-none md:flex-row">
-                <h1 class="sm:text-3xl text-center font-bold text-yellow-400 text-2xl mb-8 mt-8">Tere tulemast Muratsi sadamasse!</h1>
-                <p class="text-center border-0 mt-14 border-black-1000 text-xl font-bold">Sadama eeskirjad</p>
-                <p>Hoia puhtust ning ära jäta enda järel prügi maha!</p>
-                <p>Ära tarbi alkoholi sadama ega rannaalal!</p>
-                <p>Mänguväljaku kasutamine omal vastutusel ning täiskasvanu järelvalve all!</p>
-                <p>Auto parkimine haljasalal keelatud!</p>
-                <p>Koer peab sadamaalal olema jalutusrihma või kandmisvahendis, et tagada inimeste ja teiste loomade ohutus.</p>
-                <p>Öörahu sadamaalal kell 22.00! v.a. üritustel, mis kooskülas sadama haldajaga</p>
-                <p>Sadamaalal on 24h videovalve.</p>
-                <p class="text-center border-0 mt-12 mb-4 border-black-1000 text-xl font-bold">Turvalisuse, heakorra ja avaliku korra nõuded supluskohas</p>
-                <p>Randa ei ole lubatud kaasa võtta ega seal ujutada lemmik-ja muid loomi</p>
-                <p>Ära jäta lapsi omapead! Ka madalas vees järelvalveta viibimine võib olla ohtlik</p>
-                <p>Rannas ega vees ei viibita ega ujuta joobeseisundis, narko-või muude psühhotoksiliste ainete mõju all</p>
-                <p>Ära võta randa kaasa klaastaara jooke</p>
-                <p>Rannaala on avalikuks kasutamiseks, suplemine ja ujumine on omal vastutusel, rannaalal puudub järelvalve</p>
-                <p class="text-center border-0 mt-12 mb-4 border-black-1000 text-xl font-bold">Viibimine sildadel, kaidel ja purretel</p>
-                <p>Ära jäta lapsi järelvalveta sõltumata nende vanusest</p>
-                <p>Järgi kõiki ohutusnõudeid</p>
-                <p>Ära jookse, tõukle ega proovi kedagi vette lükata</p>
-                <p>Ära hüppa vette pea ega jalad ees selleks mitte ettenähtud kohas</p>
-                <p>Ära uju sildade, kaide , purrete jms. alla</p>
-                <p>Sillad ja kaid ei ole mõeldud hüppamiseks</p>
-                <p class="text-center border-0 mt-12 mb-4 border-black-1000 text-xl font-bold">Kasulikud kontaktid</p>
-                <p>Enda või teiste terviserikete või muude ohtude korral helista häirekeskuse lühinumbril 112</p>
-                <p>Sadamast või supluskohast leitud vigastatud või haigetest lindudest ja loomadest teavita Keskkonnainspektsiooni telefonil 131</p>
-                <p>Lõhutud või rikutud inventari, suplusala heakorra, muude kaebuste või ettepanekute puhul võtta ühendust sadam@muratsi.ee</p>
-                <p class="text-center border-0 mb-4 mt-20 border-black-1000 text-xl font-bold">Hoiame puhtust ja korda ning veedame mõnusalt aega Muratsi päikese all!</p>
+    <?php /*------test------------*/ ?>
+    <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+        <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
+            <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed h-200 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+                <div @click.away="imgModal = ''" class="flex flex-col overflow-auto">
+                    <div class="">
+                        <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+                            <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-2">
+                        <img :alt="imgModalSrc" class="object-contain h-full justify-center" :src="imgModalSrc">
+                        <p x-text="imgModalDesc" class="text-center text-white"></p>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+    <?php /*------test------------*/ ?>
+    <div class="container md:px-32 mx-auto mb-12 flex text-white flex-col xl:flex-row mt-12 gap-4">
+        <div class="mx-auto px-4 bg-blue-700 rounded-2xl shadow-xl xl:w-2/3">
+            <div class="mt-8 sm:mt-0 sm:w-full pb-8 sm:p-8 text-white md:flex-row">
+                <h1 class="font-bold text-yellow-400 text-4xl mb-8">Uudised</h1>
+                <div>
+                    <div class="flex mb-4 justify-between">
+                        <p href="#" class=" text-lg underline sm:text-xl">Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi.</p>
+                        <p class="text-yellow-400">20.04.2021</p>
+                    </div>
+                    <div class="text-center mt-6">
+                        <p class="text-sm sm:text-base">MTÜ-de Muratsi Kalur ja Muratsi Küla Selts korraldatud talgutele kogunes laupäeva hommikul veerandsada külaelanikku.  Suur osa tööst sai tehtud masinate abil: killustik ja muld laiali laotatud ning maapind enam-vähem tasaseks silutud. Oma käterammule lootnud talguliste hooleks jäi maapind riisuda, kivid ära korjata, muru külvata ja muld siledaks rullida, samuti võrkpalliplatsi jaoks toodud liiv laiali ajada ja siluda. Mehed tegid segu ja paigaldasid muruplatsile äärekivid. Kolme tunniga said haljastustööd tehtud ja rannaala korda.
+                        </p>
+                        <p class="mt-6 mb-6">
+                        Endiste lagunenud ja ohtlikuks muutunud atraktsioonide asemel ootavad oma küla elanikke ja külalisi nüüd mängulinnak, liivakast, kiiged, pisike karussell, sportimiskompleks, kolm erineva kõrgusega korvilauda, uued pingid, riietumiskabiin ja jalgrattahoidja. “Tänu Saaremaa vallale saime randa ka uue liiva,” lausus Hiie. Tema sõnul on kumu uuest mänguväljakust juba levida jõudnud – lapsi turnib atraktsioonidel iga päev.
+                        </p>
+                        <p class="mt-6 mb-6">MTÜ Saarte Kalandus toetas Euroopa Merendus- ja Kalandusfondi sügisesest taotlusvoorust Muratsi Kaluri projekti sadama mänguväljaku- ja tervisekompleksi rajamiseks 48 627  euroga. Vajaliku omaosaluse aitasid katta Saaremaa vald ja Muratsi elanikud. “Kuna meie kogukonda kuulub palju häid inimesi, kes said appi tulla oma rasketehnikaga või organiseerida sadamaalale oma vahenditest liiva, mulda ja killustikku, sai see töö plaanitust suuremalt ette võetud, et sadamaala terviklikumalt ilusamaks teha. Samuti planeerisime parkimisala ja sõiduala suuremaks, et nii kutselised kui ka hobikalurid saaksid sadamaalal paremini tegutseda,” rääkis Siim Hiie. </p>
+                        <div x-data="{}" class="justify-content: center;">
+                            <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/posts/postitus3.png'})">
+                                <img class="m-auto h-64 w-100" alt="Placeholder" src="/img/posts/postitus3.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <?php /* FOOTER-------------------------*/ ?>
     <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-gray-800">
         <div class="container md:px-32 mx-auto mb-8 px-6">

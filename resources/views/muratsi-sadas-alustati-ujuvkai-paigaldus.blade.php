@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <title>Täname</title>
+    <title></title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -16,7 +16,7 @@
     </style>
 </head>
 
-<body class="bg-primary bg-background bg-no-repeat">
+<body class="bg-primary bg-background">
     <?php /*------IMG what moves------------*/ ?>
     <div class="sidebar invisible md:visible">
         <a href="/taname"><img src="/img/vapp1.png" class="badge"></a>
@@ -45,44 +45,61 @@
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/visioon">VISIOON</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/galerii">GALERII</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/uudised">UUDISED</a>
-                <a class="px-4 py-2 mt-2 text-sm text-yellow-400" href="/taname">TÄNAME</a>
+                <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/taname">TÄNAME</a>
                 <div @click.away="open = false" class="relative" x-data="{ open: false }"></div>
             </nav>
         </div>
     </div>
 
-
     <?php /* MAIN--------------------------------------*/ ?>
-    <div class="container md:px-32 mx-auto mb-12 mt-8 px-6 ">
-        <div class="sm:flex px-4 sm:mt-8 bg-blue-700 rounded-2xl">
-            <div class="mt-8 sm:mt-0 sm:w-full sm:p-8 text-white md:flex-row">
-                <h1 class="sm:text-3xl font-bold text-yellow-400 text-2xl mb-8">ME TÄNAME</h1>
-                <h1 class="border-0 border-black-1000 mt-8 text-xl  font-medium">Saarte Kalandus</h1>
-                <p class=" border-0 border-black-1000 font-extralight mb-4">Meeldiva koostöö eest ning suhtlemisel erinevate projektide koostamisel Euroopa Merendus- ja Kalandusfondist.</p>
-                <p>EMKF rakenduskava 2014-2020 toetatud projektid</p>
-                <p>• 2020 - Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala- ja mereturismi arendamine</p>
-                <p>• 2019 - Muratsi sadama mänguväljaku- ja tervisekompleksi rajamine</p>
-                <p>• 2017 - Muratsi sadama rekonstrueerimine</p>
-                <h1 class="border-0 border-black-1000 mt-8 text-xl font-medium">Saaremaa vald</h1>
-                <p class=" border-0 border-black-1000 mb-4">Suurepärase koostöö eest! Saaremaa vald on aidanud erinevate projektide omaosaluse rahastamisel ning pakub igakülgset abi sadama haldamisel.</p>
-                <h1 class="border-0 border-black-1000 mt-8 text-xl font-medium">MTÜ Võimalus</h1>
-                <p class=" border-0 border-black-1000 mb-4">Sügisvooru 2020 projekti rahastusest on tehtud sadamale uus koduleht, rajatud elektrisüsteemid valgustuse ja turvakaamerate jaoks.</p>
-                <h1 class="border-0 border-black-1000 mt-8 text-xl font-medium">Muratsi küla inimesed</h1>
-                <p class=" border-0 border-black-1000 mb-4">2020 aastal valminud laste mänguväljak ning tervisekompleksi omaosaluse rahastusele andis panuse Helle Liigsoo, Aivo Jürisson, Raul Pors, Eilika Trummar, Marje Kruusmägi, Aare Kruusmägi, Viljo Veesaar, Anu Ots, Mari Rauna, Helen Kombe, Kadi Hiie, Margo Jäe, Jaanus Heina, Elvis Reinmägi, Taavi Sevastjanov, Andro Ots ja Andres Kirst!</p>
-                <h1 class="border-0 border-black-1000 mt-8 text-xl font-medium">Kuressaare Soojus AS</h1>
-                <p class=" border-0 border-black-1000 mb-4">Suur tänu meeldiva koostöö eest, mille tulemusel saime mänguväljakutele ja terviselinnakule juurde hakkepuitu!</p>
-
-                <div class="flex flex-wrap justify-evenly pb-4">
-                    <img src="/img/taname/kalandus.png" alt="" class="h-28 self-center">
-                    <img src="/img/taname/vald.png" alt="" class="h-24 self-center">
-                    <img src="/img/taname/voimalus.png" alt="" class="h-16 self-center">
-                    <img src="/img/taname/emkf.png" alt="" class="h-24 self-center">
-                    <img src="/img/taname/emkf2.png" alt="" class="h-24 self-center">
+    <?php /*------test------------*/ ?>
+    <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+        <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
+            <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed h-200 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+                <div @click.away="imgModal = ''" class="flex flex-col overflow-auto">
+                    <div class="">
+                        <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+                            <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-2">
+                        <img :alt="imgModalSrc" class="object-contain h-full" :src="imgModalSrc">
+                        <p x-text="imgModalDesc" class="text-center text-white"></p>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+    <?php /*------test------------*/ ?>
+    <div class="container md:px-32 mx-auto mb-12 flex text-white flex-col xl:flex-row mt-12 gap-4">
+        <div class="mx-auto px-4 bg-blue-700 rounded-2xl shadow-xl xl:w-2/3">
+            <div class="mt-8 sm:mt-0 sm:w-full pb-8 sm:p-8 text-white md:flex-row">
+                <h1 class="font-bold text-yellow-400 text-4xl mb-8">Uudised</h1>
+                <div>
+                    <div class="flex mb-4 justify-between">
+                        <p href="#" class=" text-lg underline sm:text-xl">Muratsi sadamas alustati ujuvkai paigaldust</p>
+                        <p class="text-yellow-400">20.04.2021</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start">
+                        <p class="text-sm sm:text-base">Jaanuari algul alustati kaevetöödega Muratsi sadama akvatooriumis, kus väljakaevatava osa asemel tuleb ujuvkai, mis annab sadamale juurde 16 paadi kohta.
+                        Projekti ''Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala-ja mereturisimi arendamine'' jaoks saadi rahastus läbi Saarte Kalanduse EMKF kalanduspiirkonna kohaliku arengu strateegia 3.3 kaudu.
+                        Projekti kogu maksumus on 57 492€, millest PRIA toetus on 51 743€. Omaosaluse osalise katmise panustas Saaremaa vald.
+                        Peatöövõtja on Kuressaare Ehitus OÜ ning alltöövõtja Sikasaare Vanametall OÜ.
+                        Tööd planeeritakse lõpetada aprillis.
+                        </p>
+                    </div>
+                    <div x-data="{}" class="">
+                            <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/posts/postitus1.png'})">
+                                <img class="h-64 w-100 m-auto" alt="Placeholder" src="/img/posts/postitus1.png">
+                            </a>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
-
     <?php /* FOOTER-------------------------*/ ?>
     <footer class="footer bg-gray-800 relative pt-1 border-b-2 border-gray-800">
         <div class="container md:px-32 mx-auto mb-8 px-6">

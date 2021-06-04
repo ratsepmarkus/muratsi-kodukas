@@ -44,6 +44,7 @@
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/uritused">ÜRITUSED</a>
                 <a class="px-4 py-2 mt-2 text-sm text-yellow-400" href="/visioon">VISIOON</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/galerii">GALERII</a>
+                <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/uudised">UUDISED</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer" href="/taname">TÄNAME</a>
                 <div @click.away="open = false" class="relative" x-data="{ open: false }"></div>
             </nav>

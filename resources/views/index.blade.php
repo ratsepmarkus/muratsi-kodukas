@@ -90,6 +90,11 @@
             --t: 1.95;
             --l: 17;
         }
+
+        .navigation ul li:nth-child(9) {
+            --t: 1.96;
+            --l: 19;
+        }
     </style>
 </head>
 
@@ -121,6 +126,7 @@
                 <a class="px-4 py-2 mt-2 text-sm text-white" href="/uritused">ÜRITUSED</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white" href="/visioon">VISIOON</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white" href="/galerii">GALERII</a>
+                <a class="px-4 py-2 mt-2 text-sm text-white" href="/uudised">UUDISED</a>
                 <a class="px-4 py-2 mt-2 text-sm text-white" href="/taname">TÄNAME</a>
                 <div @click.away="open = false" class="relative" x-data="{ open: false }"></div>
             </nav>
@@ -160,6 +166,7 @@
                 <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/uritused">ÜRITUSED</a></li>
                 <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/visioon">VISIOON</a></li>
                 <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/galerii">GALERII</a></li>
+                <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/uudised">UUDISED</a></li>
                 <li><a class="px-2 py-2 mt-2 text-md text-white rounded-xl border border-solid border-transparent hover:border-current cursor-pointer select-none" href="/taname">TÄNAME</a></li>
             </ul>
             <?php /*WEATHER DATA*/ ?>
@@ -185,14 +192,14 @@
                 <h1 class="font-bold text-yellow-400 text-4xl mb-8">TEATED</h1>
                 <div>
                     <div class="flex mb-4 justify-between">
-                        <p href="#" class=" text-lg underline sm:text-xl">Muratsi sadamas alustati ujuvkai paigaldust</p>
+                        <p href="#" class=" text-lg underline sm:text-xl"><a href="/muratsi-sadas-alustati-ujuvkai-paigaldus">Muratsi sadamas alustati ujuvkai paigaldust</a></p>
                         <p class="text-yellow-400">20.04.2021</p>
                     </div>
                     <div class="flex flex-col sm:flex-row items-start">
                         <p class="text-sm sm:text-base">Jaanuari algul alustati kaevetöödega Muratsi sadama akvatooriumis, kus väljakaevatava osa asemel tuleb ujuvkai, mis annab sadamale juurde 16 paadi kohta.
                             Projekti ''Muratsi piirkonna traditsioonilise kalapüügi edendamine ning kala-ja mereturisimi arendamine'' jaoks saadi rahastus läbi Saarte Kalanduse EMKF kalanduspiirkonna kohaliku arengu strateegia 3.3 kaudu.
                         </p>
-                        <div x-data="{}" class="">
+                        <div class="">
                             <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/posts/postitus1.png'})">
                                 <img class="h-full w-full" alt="Placeholder" src="/img/posts/postitus1.png">
                             </a>
@@ -202,13 +209,13 @@
 
                 <div class="border-t-2 border-b-2 border-gray-800 py-8 my-8">
                     <div class="flex mb-4 justify-between">
-                        <p href="#" class=" text-lg underline sm:text-xl">Kena Tegu 2020 nominent</p>
+                        <p href="#" class=" text-lg underline sm:text-xl"><a href="/kena-tegu">Kena Tegu 2020 nominent</a></p>
                         <p class="text-yellow-400">20.04.2021</p>
                     </div>
                     <div class="flex flex-col sm:flex-row items-start">
                         <p class="text-sm sm:text-base">Saaremaa Arenduskeskuse poolt korraldatud tunnustusüritusel saime märgitud kui Kena Tegu 2020 nominent. Tunnustus saadi uute tegevustega sadamaalal, kui kogukonna kaasabil korrastati haljastus ning suplusala.
                         </p>
-                        <div x-data="{}" class="">
+                        <div class="">
                             <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/posts/postitus2.png'})">
                                 <img class="h-full w-full" alt="Placeholder" src="/img/posts/postitus2.png">
                             </a>
@@ -217,12 +224,12 @@
                 </div>
 
                 <div class="flex mb-4 justify-between">
-                    <p href="#" class=" text-lg underline sm:text-xl">Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi</p>
+                    <p href="#" class=" text-lg underline sm:text-xl"><a href="muratsi-sadam-sai">Muratsi sadam sai uue mänguväljaku ning ilus ilm tõi talgutele rohkelt inimesi</a></p>
                     <p class="text-yellow-400">20.04.2021</p>
                 </div>
                 <div class="flex flex-col sm:flex-row items-start">
                     <p class="text-sm sm:text-base">MTÜ-de Muratsi Kalur ja Muratsi Küla Selts korraldatud talgutele kogunes laupäeva hommikul veerandsada külaelanikku. Suur osa tööst sai tehtud masinate abil: killustik ja muld laiali laotatud ning maapind enam-vähem tasaseks silutud.</p>
-                    <div x-data="{}" class="">
+                    <div class="">
                         <a @click="$dispatch('img-modal', {  imgModalSrc: '/img/posts/postitus3.png'})">
                             <img class="h-full w-full sm:ml-4 pt-4 sm:pt-0" alt="Placeholder" src="/img/posts/postitus3.png">
                         </a>
